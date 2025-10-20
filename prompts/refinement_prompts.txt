@@ -1,1 +1,153 @@
-Prompt: "Simplify UI for mobile play, make decision buttons larger and reduce text density."
+# ===========================
+# ✨ REFINEMENT PROMPTS
+# ===========================
+# Prompts used for debugging, polishing, balancing, and improving the game
+# after initial implementation
+
+## GAME BALANCE ADJUSTMENTS
+---
+Prompt 1: "Playtesting reveals balance.js V1 is too aggressive—stats decay 80% by round 12. Redesign with 75% gentler mechanics: lower decay rates, later activation (round 7+), higher specialist threshold (90 vs 80)."
+
+Prompt 2: "Calculate exact decay progression for V2: decayRate = 0.08 + (round - 6) * 0.02, resulting in 0.08→0.38 over rounds 7-12 instead of 0.2→0.8."
+
+Prompt 3: "Test specialist strategy viability: Can a player maintain Innovation at 85-90 while keeping others above 40? If not, further reduce penalties."
+
+Prompt 4: "Verify balanced strategy achievability: Can player keep all stats 65-75% through 12 rounds? Ensure 'Balanced One' ending is rare but possible."
+
+Prompt 5: "Adjust event probabilities: 35% feels too high for Data Leak, reduce to 25%. Ethics Award at 15% is good—keeps it special."
+
+## UI/UX IMPROVEMENTS
+---
+Prompt 6: "Simplify mobile interface: increase decision button touch targets to minimum 44x44px, add more padding between interactive elements."
+
+Prompt 7: "Reduce text density in scenario descriptions: break long paragraphs into 2-3 shorter sentences, increase line-height to 1.8 for readability."
+
+Prompt 8: "Add visual hierarchy to stat bars: make critical stats (<20%) pulse with red glow animation to catch attention immediately."
+
+Prompt 9: "Improve modal timing: crisis events should display for 4 seconds (was 3), give players time to read before auto-dismiss."
+
+Prompt 10: "Optimize card layout: ensure scenario title, description, and buttons all visible without scrolling on mobile screens."
+
+## FEEDBACK CLARITY
+---
+Prompt 11: "Add stakeholder reaction feedback: when Investor reacts, show '+2 Profit' floating indicator briefly above stat bar."
+
+Prompt 12: "Display balance system activation notice: 'Round 7: Dynamic balancing now active' to explain why stats start decaying."
+
+Prompt 13: "Show event risk indicators: if ethics <30, display '⚠️ Data Leak Risk' near Ethics bar to telegraph potential crisis."
+
+Prompt 14: "Improve ending feedback: add 'Your final balance' visualization showing how close player was to other endings."
+
+## AI COMMENTARY POLISH
+---
+Prompt 15: "Refine AI prompt engineering: add instruction to avoid repetitive phrases like 'the balance is key' across multiple rounds."
+
+Prompt 16: "Increase temperature from 0.7 to 0.8 for more varied commentary, but keep maxTokens at 200 to ensure conciseness."
+
+Prompt 17: "Improve fallback commentary: create 10 templates instead of 5, with more specific references to stat combinations."
+
+Prompt 18: "Add personality to The Auditor: use more metaphors about data flows, networks, algorithms. Example: 'Your Profit flows like unchecked current—brilliant but dangerous.'"
+
+Prompt 19: "Fix API error handling: if rate limit hit, show user-friendly message 'The Auditor is silent this round' instead of generic error."
+
+## PERFORMANCE OPTIMIZATION
+---
+Prompt 20: "Profile page load time: currently ~200ms. Inline critical CSS to reduce render-blocking, defer non-critical scripts."
+
+Prompt 21: "Optimize JSON file sizes: scenarios.json and events.json are small (<5KB each), no compression needed but verify gzip enabled on server."
+
+Prompt 22: "Reduce animation jank: use CSS transform instead of top/left for position animations, ensure GPU acceleration with will-change."
+
+Prompt 23: "Lazy-load AI commentary: don't block decision flow waiting for API, display previous commentary while new one generates in background."
+
+## BUG FIXES
+---
+Prompt 24: "Fix race condition: sometimes checkGameOver() runs before applyBalanceAdjustments(), causing premature game over. Ensure correct order in handleDecision()."
+
+Prompt 25: "Debug stakeholder satisfaction tracking: initialized but never updated. Either implement full system or remove from state to avoid confusion."
+
+Prompt 26: "Fix modal overlay z-index conflict: event modals sometimes appear behind stat bars on mobile. Set z-index: 1000 on modal container."
+
+Prompt 27: "Resolve scenario repeat issue: with only 2 scenarios, players see same content 6 times in 12 rounds. Add 10-15 more scenarios urgently."
+
+Prompt 28: "Fix gradient text rendering on Safari: -webkit-background-clip not working. Add vendor prefixes and fallback solid color."
+
+## ACCESSIBILITY IMPROVEMENTS
+---
+Prompt 29: "Add ARIA labels to all interactive elements: buttons need role='button', progress bars need aria-valuenow, aria-valuemin, aria-valuemax."
+
+Prompt 30: "Ensure keyboard navigation: all buttons reachable via Tab, Enter/Space activates, Escape closes modals."
+
+Prompt 31: "Improve color contrast ratios: verify all text meets WCAG AA standards (4.5:1 for body, 3:1 for large text). Test with contrast checker."
+
+Prompt 32: "Add screen reader announcements: when stats change, announce 'Innovation decreased to 45%' for visually impaired players."
+
+## CONTENT EXPANSION
+---
+Prompt 33: "Create 15 new scenario cards covering: healthcare AI, autonomous vehicles, social media algorithms, predictive policing, gene editing, deepfakes, facial recognition, worker surveillance, educational AI, climate modeling."
+
+Prompt 34: "Write 3 new stakeholder types: The Whistleblower (neutral truth-teller), The Entrepreneur (disruption-focused), The Ethicist (principle-driven). Add to JSON with unique modifiers."
+
+Prompt 35: "Design 5 new random events: AI breakthrough (positive), algorithmic bias scandal (crisis), talent acquisition (positive), regulatory crackdown (crisis), public sentiment shift (neutral)."
+
+Prompt 36: "Expand AI commentary templates: add specific responses for different ending paths being pursued (player heading toward Visionary Innovator vs Ethical Guardian)."
+
+## DOCUMENTATION POLISH
+---
+Prompt 37: "Update README.md: fix geminiService.js → judge.js references throughout, update screenshots to match current UI."
+
+Prompt 38: "Complete IMPLEMENTATION_SUMMARY.md: add missing sections on balance system V2, AI integration details, ending calculation logic."
+
+Prompt 39: "Write BALANCE_COMPARISON.md: document differences between V1 and V2 with exact math showing why V2 is 75% gentler."
+
+Prompt 40: "Create QUICK_START.md: single-page guide for evaluators showing how to run game in 3 commands and enable AI in 2 steps."
+
+## VISUAL POLISH
+---
+Prompt 41: "Refine button hover states: add subtle scale transform (1.05) + brightness increase (110%) + stronger glow for tactile feedback."
+
+Prompt 42: "Improve progress bar animations: add smooth 0.5s transition when values change, easing function cubic-bezier for natural feel."
+
+Prompt 43: "Polish card shadows: increase blur radius from 8px to 12px, add subtle inset shadow for depth perception."
+
+Prompt 44: "Enhance gradient backgrounds: add subtle animated gradient shift on crisis/success events for emotional resonance."
+
+## TESTING & VALIDATION
+---
+Prompt 45: "Test all 6 ending conditions: manually set stats to trigger each ending, verify correct title/description/legacy displayed."
+
+Prompt 46: "Validate game over scenarios: force each metric to 0, confirm proper collapse message (SCANDAL/UPRISING/RECESSION/STAGNATION)."
+
+Prompt 47: "Test event trigger logic: set stats to match each event's conditions, verify probability rolls work correctly over 100 trials."
+
+Prompt 48: "Cross-browser testing: verify game works in Chrome, Firefox, Safari, Edge. Fix any CSS/JS compatibility issues."
+
+Prompt 49: "Mobile device testing: test on actual phones (not just browser dev tools) to verify touch targets, scrolling, and readability."
+
+## PERFORMANCE METRICS
+---
+Prompt 50: "Measure and optimize: First Contentful Paint (<1s), Time to Interactive (<2s), Total bundle size (<100KB), API response time (<1s)."
+
+Prompt 51: "Monitor API usage: track Gemini API calls per game session (~10), ensure staying within free tier limits (1500/day)."
+
+## FINAL POLISH CHECKLIST
+---
+Prompt 52: "Spell-check all content: scenarios, stakeholder descriptions, event messages, ending texts, documentation."
+
+Prompt 53: "Consistency audit: verify all JSON uses consistent formatting, all files use consistent code style (2-space indents, semicolons)."
+
+Prompt 54: "Remove debug code: clean up console.log statements, remove commented-out code, delete unused functions."
+
+Prompt 55: "Prepare for submission: ensure all documentation complete, screenshots current, video recorded, prompts folder organized."
+
+## POST-LAUNCH IMPROVEMENTS (Future)
+---
+Prompt 56: "Add save/load system: use localStorage to save game state, allow players to continue interrupted sessions."
+
+Prompt 57: "Implement achievement system: unlock badges for reaching specific endings, maintaining perfect balance, surviving crises."
+
+Prompt 58: "Add sound effects: subtle UI sounds for button clicks, stat changes, crisis alerts, victory fanfare."
+
+Prompt 59: "Create difficulty modes: Easy (gentler balance, fewer crises), Normal (current), Hard (aggressive balance, more events)."
+
+Prompt 60: "Internationalization: add language support for UI text, translate scenarios to Spanish, French, Mandarin for global reach."

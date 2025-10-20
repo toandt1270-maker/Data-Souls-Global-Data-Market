@@ -1,2 +1,105 @@
-Prompt: "Generate futuristic glass-style icons for 4 metrics in 128x128px."
-Prompt: "Design background of a boardroom representing AI ethics council."
+# ===========================
+# 🎨 ASSET GENERATION PROMPTS
+# ===========================
+# Prompts used for generating visual assets, icons, and UI elements
+# Most visual design was done through CSS, but these guided the aesthetic
+
+## ICON DESIGN
+---
+Prompt 1: "Generate a set of 4 minimalist neon-style icons representing Innovation (lightbulb circuit), Profit (coin stack), Trust (handshake), and Ethics (balance scales). Style: glowing outlines, transparent backgrounds, 128x128px."
+
+Prompt 2: "Design emoji-based visual representations for each metric that work in pure HTML/CSS: 💡 (Innovation), 💰 (Profit), 🤝 (Trust), ⚖️ (Ethics)."
+
+Prompt 3: "Create SVG icons for decision buttons: Approve (checkmark with green glow), Delay (pause symbol with amber), Reject (X with red highlight)."
+
+## BACKGROUND & ATMOSPHERE
+---
+Prompt 4: "Design a CSS gradient background that evokes 'deep space' with subtle starfield effect using pure CSS. Colors: #0F111A base transitioning to #1B1E2B."
+
+Prompt 5: "Create a card background design that looks like holographic data panels - dark base (#1B1E2B) with subtle border glow and semi-transparent effects."
+
+Prompt 6: "Generate a futuristic boardroom scene representing the Global AI Ethics Council chamber - minimalist, high-tech, with large screens showing data visualizations. (Note: Not used in final build due to front-end only constraint)"
+
+## UI COMPONENT VISUALS
+---
+Prompt 7: "Design a progress bar that fills with neon glow effect. Empty state: dark gray, Filling: gradient from left with metric color, Critical (<20%): pulsing red glow animation."
+
+Prompt 8: "Create a modal overlay design for random events with crisis/success variants: Crisis = red-violet gradient border with warning glow, Success = emerald-blue gradient with celebration glow."
+
+Prompt 9: "Design button states: Default (solid color), Hover (glow effect + brightness increase), Active (pressed inward shadow), Disabled (50% opacity, no glow)."
+
+## TYPOGRAPHY & TEXT EFFECTS
+---
+Prompt 10: "Suggest CSS text-shadow effects to create 'neon glow' on headings. Primary: violet glow (0 0 12px #CC66FF), Secondary: blue glow (0 0 8px #4DA6FF)."
+
+Prompt 11: "Design a gradient text effect for main title 'Data Souls' - gradient from innovation blue to ethics violet with subtle glow."
+
+Prompt 12: "Create text hierarchy with visual weight: H1 with glow, H2 with gradient, body text clean white, muted text in #AAB2C5."
+
+## ANIMATION CONCEPTS
+---
+Prompt 13: "Design fade-in animation for view transitions: 0.4s ease-in, opacity 0→1, slight upward translation (10px)."
+
+Prompt 14: "Create pulse animation for critical stat warnings: 1.5s infinite, opacity 0.8→1.0, box-shadow grows 0→20px with danger color."
+
+Prompt 15: "Design smooth progress bar fill animation with gradient shift as value increases."
+
+## EVENT VISUAL INDICATORS
+---
+Prompt 16: "Create emoji + color combinations for different event types:
+- 🔓 Data Leak (red glow)
+- 🤖 Rogue AI (violet danger)
+- 📉 Market Crash (amber warning)
+- 🚫 Boycott (orange alert)
+- 🔬 Breakthrough (emerald success)
+- 🏆 Award (gold celebration)"
+
+Prompt 17: "Design crisis alert modal: Dark red-violet gradient background, pulsing border, warning icon, urgent typography."
+
+Prompt 18: "Design success celebration modal: Emerald-blue gradient, subtle sparkle effect, achievement icon."
+
+## STAKEHOLDER AVATARS (Conceptual)
+---
+Prompt 19: "Design minimalist avatar concepts for 4 stakeholders:
+- The Investor: Coin/graph icon, amber theme
+- The Regulator: Gavel/shield icon, violet theme
+- The Public: People/crowd icon, emerald theme
+- The Visionary: Telescope/lightbulb icon, blue theme"
+
+Prompt 20: "Create simple geometric representations of stakeholders using CSS shapes and gradients (circle, square, triangle, hexagon with respective theme colors)."
+
+## COLOR PALETTE DOCUMENTATION
+---
+Prompt 21: "Generate a color palette swatch image showing all theme colors with hex codes, emotional associations, and usage guidelines."
+
+Prompt 22: "Create gradient preview cards showing all gradient combinations used: header gradient (blue→violet), button gradient (blue→emerald), crisis gradient (dark violet)."
+
+## RESPONSIVE DESIGN VISUALS
+---
+Prompt 23: "Design mobile-optimized button sizing: minimum 44x44px touch targets, increased spacing between interactive elements."
+
+Prompt 24: "Create responsive card layout that stacks vertically on mobile (<768px) and displays in grid on desktop."
+
+## AI COMMENTARY VISUAL STYLE
+---
+Prompt 25: "Design 'The Auditor' commentary box: semi-transparent dark panel, violet accent border, italic philosophical text, small profile icon (🤖 or 👁️)."
+
+Prompt 26: "Create loading animation for AI commentary: pulsing violet dots '...', text 'The Auditor is analyzing' with subtle fade."
+
+## ENDING SCREEN VISUALS
+---
+Prompt 27: "Design 6 distinct visual themes for endings:
+- Balanced One: Rainbow gradient (all colors)
+- Ethical Guardian: Emerald + violet shield motif
+- Visionary Innovator: Blue + amber rocket motif
+- Data Dealer: Amber + dark red coin motif
+- Algorithm Overlord: Blue + dark violet circuit motif
+- Stalled Bureaucrat: Muted grays, minimal styling"
+
+Prompt 28: "Create final stats visualization: circular gauge for each metric with color-coded fill, displaying final percentages prominently."
+
+## SCREENSHOT COMPOSITION (for Documentation)
+---
+Prompt 29: "Capture screenshots demonstrating key game states: main menu, decision screen with high stats, crisis event modal, game over collapse, optimal ending screen."
+
+Prompt 30: "Create a UI showcase image demonstrating the complete color system in action: all 4 progress bars, all button types, modal overlays, typography hierarchy."

@@ -1,2 +1,59 @@
-Prompt : "Suggest 5 board-game concepts addressing AI ethics and data privacy."
-Prompt : "Make one of them feel global – showing conflict between innovation and human values."
+# ===========================
+# 🧠 CONCEPT PROMPTS
+# ===========================
+# Prompts used during initial brainstorming phase
+# to develop the core game concept for "Data Souls"
+
+## PHASE 1: Initial Concept Exploration
+---
+Prompt 1: "Suggest 5 serious game concepts that explore AI ethics, data privacy, and algorithmic governance in interactive ways. Each should have a unique core mechanic."
+
+Prompt 2: "Design a card-based decision game where players balance four competing values: Innovation, Profit, Trust, and Ethics. The game should simulate the pressure of being a policymaker in an AI-driven society."
+
+Prompt 3: "Create a game concept inspired by 'Reigns' mechanics but focused on data governance. Players should face moral dilemmas where every choice has meaningful trade-offs."
+
+## PHASE 2: Theme & Narrative Development
+---
+Prompt 4: "Develop a narrative framing where the player leads the 'Global AI Ethics Council' making decisions that affect humanity's digital future. Include stakeholder pressures from investors, regulators, the public, and visionaries."
+
+Prompt 5: "Design an antagonist/observer character called 'The Auditor' - an AI that analyzes the player's decisions and provides philosophical commentary on their governance style."
+
+Prompt 6: "Create 6 distinct endings for an AI governance game that reflect different philosophies: balanced governance, ethical conservatism, techno-utopianism, corporate capture, algorithmic authoritarianism, and bureaucratic mediocrity."
+
+## PHASE 3: Core Mechanics Design
+---
+Prompt 7: "Design a four-metric balancing system where Innovation, Profit, Trust, and Ethics start at 50% and must be maintained. If any reaches 0, trigger instant game over with specific collapse scenarios."
+
+Prompt 8: "Create a probability-weighted random event system where low stats increase the likelihood of crises (data leaks, protests, market crashes) and high balanced stats trigger positive breakthroughs."
+
+Prompt 9: "Design a 12-round game structure where early rounds allow strategy setup, mid-game introduces balance mechanics to prevent runaway stats, and endgame determines legacy based on final metric distribution."
+
+## PHASE 4: Educational Impact
+---
+Prompt 10: "How can a card game effectively teach players about the complexity of AI governance without being preachy? Focus on creating empathy through role-playing and consequence simulation."
+
+Prompt 11: "Design scenarios for an AI ethics game covering: facial recognition in schools, health data trade, predictive policing, social media algorithms, autonomous vehicles, gene editing, and deepfakes."
+
+Prompt 12: "Create a system where players experience the tension between short-term gains (approving risky tech) and long-term stability (maintaining public trust and ethical standards)."
+
+## PHASE 5: AI Integration Planning
+---
+Prompt 13: "Design a generative AI commentary system that analyzes player decisions in real-time and provides thoughtful, non-judgmental reflections on their governance philosophy."
+
+Prompt 14: "Create prompt templates for an AI character that uses metaphors related to data, networks, and algorithms to comment on player choices. The AI should be philosophical rather than instructive."
+
+Prompt 15: "How can we use Google's Gemini API to generate context-aware feedback that considers current stats, decision patterns, and moral imbalances without feeling repetitive?"
+
+## PHASE 6: Visual Identity
+---
+Prompt 16: "Design a visual theme called 'Neon Morality' that balances futuristic aesthetics with ethical weight. Use neon colors (blue innovation, amber profit, emerald trust, violet ethics) against a deep space background."
+
+Prompt 17: "Create a color system where each metric has a distinct emotional association: Innovation=Logic/Progress (blue), Profit=Ambition/Drive (amber), Trust=Empathy/Connection (emerald), Ethics=Conscience/Integrity (violet)."
+
+## PHASE 7: Replayability Design
+---
+Prompt 18: "Design multiple viable strategies for winning: balanced approach (all stats 65-75%), specialist approach (one stat high, others maintained), and mixed approaches. Ensure no single dominant strategy."
+
+Prompt 19: "Create a dynamic difficulty system that activates after round 6, applying gentle decay to high stats to prevent infinite growth while still allowing both balanced and specialist builds."
+
+Prompt 20: "How can random events, AI-generated commentary, and multiple endings create a unique experience each playthrough despite limited scenario content?"

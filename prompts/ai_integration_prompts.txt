@@ -1,0 +1,200 @@
+# ===========================
+# 🤖 AI INTEGRATION PROMPTS
+# ===========================
+# Prompts specifically for implementing and optimizing AI features
+# Focus on Gemini API integration and prompt engineering
+
+## INITIAL AI PLANNING
+---
+Prompt 1: "Research Google Gemini API capabilities: What models are available on free tier? What's the rate limit? What safety settings should we use for a serious game about ethics?"
+
+Prompt 2: "Design 'The Auditor' character: An omniscient AI observer who comments on player decisions. Personality: philosophical, non-judgmental, uses data/tech metaphors. Voice: thoughtful but sometimes provocative."
+
+Prompt 3: "Determine optimal timing for AI commentary: Should it appear before decision (advice), during (real-time), or after (reflection)? Decision: After—to encourage independent thinking then provide reflection."
+
+## PROMPT ENGINEERING STRATEGY
+---
+Prompt 4: "Design a prompt structure that includes:
+- Character framing ('You are The Auditor')
+- Current game context (round, stats)
+- Decision history analysis
+- Specific request (2-3 sentences, philosophical tone)
+- Output constraints (length, style, perspective)"
+
+Prompt 5: "Create a system for categorizing stats that AI can reference:
+✓ Healthy (>70%)
+~ Balanced (40-70%)
+! At Risk (20-40%)
+⚠ Critical (<20%)"
+
+Prompt 6: "Design prompt templates for different game phases:
+- Early game (rounds 1-4): Establish baseline, comment on initial direction
+- Mid game (rounds 5-8): Identify patterns, warn about imbalances
+- Late game (rounds 9-12): Reflect on philosophy, predict legacy
+- End game: Comprehensive analysis of entire session"
+
+## CONTEXT OPTIMIZATION
+---
+Prompt 7: "Calculate optimal context window: Include last 3 decisions (not all 12) to keep prompt under 1000 tokens while maintaining relevance."
+
+Prompt 8: "Create statistical analysis functions that summarize game state for AI:
+- Average balance score
+- Highest/lowest metrics
+- Imbalance degree (max - min)
+- Critical threshold warnings"
+
+Prompt 9: "Design decision pattern analyzer that detects:
+- Aggressive (2+ approves in last 3)
+- Conservative (2+ rejects)
+- Indecisive (2+ delays)
+- Adaptive (mixed decisions)"
+
+## API INTEGRATION IMPLEMENTATION
+---
+Prompt 10: "Set up Gemini API authentication: Store key in judge.js, create helper function isGeminiConfigured() to check if key is set."
+
+Prompt 11: "Implement async/await API call structure with proper error handling:
+try { const response = await fetch(...) }
+catch { return fallbackCommentary() }"
+
+Prompt 12: "Configure generation parameters:
+- temperature: 0.8 (creative but coherent)
+- topK: 40 (moderate diversity)
+- topP: 0.95 (high probability mass)
+- maxOutputTokens: 200 (2-3 sentences)"
+
+Prompt 13: "Set safety settings to BLOCK_MEDIUM_AND_ABOVE for:
+- Harassment
+- Hate speech
+- Sexually explicit
+- Dangerous content"
+
+## FALLBACK SYSTEM
+---
+Prompt 14: "Design graceful degradation: If API fails, use contextual fallback templates that reference current stats without requiring AI generation."
+
+Prompt 15: "Create 10 fallback commentary templates with variable injection:
+'Council, your ${highestStat} is admirable, but ${lowestStat} demands attention.'
+'The data flows reveal your priorities. ${observation}.'
+'Your current trajectory suggests ${prediction}.'"
+
+Prompt 16: "Implement fallback decision logic:
+1. Try API call
+2. If timeout/error → use fallback
+3. If rate limit → show 'Auditor is silent' message
+4. Game always playable regardless of API status"
+
+## COMMENTARY QUALITY IMPROVEMENT
+---
+Prompt 17: "Add personality phrases to prompts:
+- 'I observe your choices, Council...'
+- 'The balance is delicate...'
+- 'Each decision ripples through the digital ecosystem...'
+- 'Remember: data governance is not about perfection...'"
+
+Prompt 18: "Request specific literary devices:
+- Metaphors (data as water, stats as pillars, decisions as ripples)
+- Rhetorical questions (What price is progress?)
+- Contrasts (light and shadow, innovation and integrity)"
+
+Prompt 19: "Avoid AI commentary clichés by explicitly requesting:
+'Do not use generic phrases like balance is key, proceed carefully, consider the consequences.
+Instead, be specific about what you observe in THIS decision.'"
+
+## FINAL ANALYSIS GENERATION
+---
+Prompt 20: "Design end-game prompt that requests:
+1. Reflection on governance style (what player prioritized)
+2. Acknowledgment of successes AND failures
+3. Philosophical insight about data governance
+4. Forward-looking statement (something to think about)"
+
+Prompt 21: "Include ending context in final prompt:
+'The player achieved: ${endingTitle}. Their final stats: ${stats}. Provide thoughtful assessment (3-4 sentences) of their complete journey.'"
+
+Prompt 22: "Request tone for final analysis: 'Be thoughtful and reflective, not congratulatory or critical. Acknowledge the complexity they navigated.'"
+
+## TESTING AI RESPONSES
+---
+Prompt 23: "Test AI commentary consistency: Run same scenario 5 times, verify responses are varied but on-theme."
+
+Prompt 24: "Test edge cases:
+- All stats balanced at 50% (boring game) → AI should note lack of clear direction
+- One stat at 90%, others at 20% → AI should warn about imbalance
+- All stats declining → AI should note downward spiral"
+
+Prompt 25: "Validate response length: Ensure 90% of responses are 2-3 sentences (150-250 characters). Adjust maxTokens if needed."
+
+## RATE LIMIT MANAGEMENT
+---
+Prompt 26: "Calculate API usage per game: 
+- 12 rounds × ~80% commentary generation = ~10 calls
+- Final analysis = 1 call
+- Total: ~11 calls per game
+- Free tier: 1500/day = ~136 games/day (sufficient)"
+
+Prompt 27: "Implement exponential backoff for retries: If API returns 429, wait 1s, 2s, 4s before retry. After 3 failures, use fallback."
+
+Prompt 28: "Add user notification for rate limits: 'The Auditor has reached their daily analysis limit. Using cached insights.' (Make it in-character)"
+
+## PROMPT VARIATION
+---
+Prompt 29: "Create prompt variations to reduce repetitiveness:
+- Alternate opening: 'You are The Auditor' vs 'You are an AI observer' vs 'You are analyzing'
+- Vary request phrasing: 'Provide commentary' vs 'Reflect on' vs 'Analyze'"
+
+Prompt 30: "Inject randomness into prompt structure: Randomly include/exclude decision history, vary stat emoji usage, alternate metaphor suggestions."
+
+## CONTEXTUAL INTELLIGENCE
+---
+Prompt 31: "Add trend detection: If stats changed dramatically from previous round (±15%), mention it specifically in prompt: 'Innovation just dropped 18%—why?'"
+
+Prompt 32: "Include stakeholder context: 'The Investor just reacted to your decision. Consider class forces in your commentary.'"
+
+Prompt 33: "Reference triggered events: If Data Leak just occurred, prompt should mention: 'A crisis has just unfolded. Reflect on accountability.'"
+
+## PERFORMANCE OPTIMIZATION
+---
+Prompt 34: "Implement caching strategy: If player makes identical decision in similar context, reuse previous commentary with slight variation."
+
+Prompt 35: "Optimize prompt length: Current prompts ~800 tokens. Reduce to ~600 by removing redundant context, tightening language."
+
+Prompt 36: "Parallelize API calls: Generate next round commentary while player reads current scenario. Pre-fetch when possible."
+
+## ETHICAL AI USE
+---
+Prompt 37: "Transparency: Display 'AI-generated commentary by Gemini' in UI footer. Players should know AI is involved."
+
+Prompt 38: "Data privacy: Never send personally identifiable information to API. Only game state (stats, decisions) is shared."
+
+Prompt 39: "Bias monitoring: Review AI outputs for potential bias toward certain strategies (e.g., always favoring ethics over profit). Adjust prompts if detected."
+
+## DEBUGGING AI RESPONSES
+---
+Prompt 40: "Add debug logging: console.log full prompt sent, response received, parse time. Use ?debug=ai URL param to enable."
+
+Prompt 41: "Track API errors: Log error types (timeout, rate limit, invalid key, content filtered) to identify patterns."
+
+Prompt 42: "Monitor response quality: Log responses that are too short (<50 chars), too long (>300 chars), or off-topic."
+
+## ADVANCED FEATURES (Future)
+---
+Prompt 43: "Multi-turn conversations: Allow player to 'question' The Auditor about their commentary. Maintain conversation history."
+
+Prompt 44: "Personalized learning: Track player preferences across sessions, adjust commentary style (more/less philosophical, technical/emotional)."
+
+Prompt 45: "Dynamic difficulty: If player consistently ignores AI warnings, make commentary more urgent. If they heed advice, make it more subtle."
+
+## INTEGRATION WITH GAME SYSTEMS
+---
+Prompt 46: "Link AI commentary to ending calculation: If AI predicts 'heading toward Algorithm Overlord' and player achieves it, acknowledge prediction in final analysis."
+
+Prompt 47: "Use AI for event flavor text: Generate unique descriptions for recurring events based on current game context."
+
+Prompt 48: "AI-generated scenario variations: Use API to create variants of existing scenarios with different ethical angles."
+
+## DOCUMENTATION FOR AI SYSTEM
+---
+Prompt 49: "Document prompt engineering process: Create AI_INTEGRATION.md explaining character design, prompt structure, parameter choices, fallback logic."
+
+Prompt 50: "Write troubleshooting guide: Common issues (API key not working, rate limits, slow responses) with solutions for future developers/players."

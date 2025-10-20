@@ -1,1 +1,179 @@
-Prompt: "Write JavaScript code to randomly pick scenario cards from JSON and update 4 stats (Innovation, Profit, Trust, Ethics)."
+# ===========================
+# 💻 CODE GENERATION PROMPTS
+# ===========================
+# Prompts used for generating game logic, UI components, and system architecture
+
+## ARCHITECTURE & SETUP
+---
+Prompt 1: "Design a modular vanilla JavaScript architecture for a card-based game using ES6 modules. Structure: components/ (reusable UI), views/ (screens), utils/ (logic), data/ (JSON content), services/ (external APIs)."
+
+Prompt 2: "Create a state management system without frameworks. Define a centralized game state object tracking: round, stats, history, decisions, stakeholder satisfaction, and current scenario."
+
+Prompt 3: "Write a simple client-side router that navigates between MenuView, PlayView, and ResultView by re-rendering the #app container."
+
+## GAME STATE MANAGEMENT
+---
+Prompt 4: "Write a function `initGameState()` that initializes game with: 12 max rounds, 4 metrics at 50%, empty history arrays, and stakeholder satisfaction tracking."
+
+Prompt 5: "Create a function `applyDecision(state, decision, stakeholder)` that:
+1. Applies base decision effects from scenario JSON
+2. Adds stakeholder modifier based on their concern
+3. Clamps all stats between 0-100
+4. Updates history with decision context"
+
+Prompt 6: "Write `checkGameOver(state)` that returns collapse info if any metric reaches 0, with specific messages for each failure type: SCANDAL (ethics=0), UPRISING (trust=0), RECESSION (profit=0), STAGNATION (innovation=0)."
+
+## SCENARIO & EVENT SYSTEMS
+---
+Prompt 7: "Create `pickScenario(round)` that randomly selects from scenarios.json, with special logic for data_trade category every 3rd round."
+
+Prompt 8: "Write `rollStakeholder()` that randomly picks one of 4 stakeholders to influence the current decision."
+
+Prompt 9: "Implement `maybeEvent(state)` that:
+1. Checks all events in events.json
+2. Evaluates trigger conditions (stat thresholds + probability)
+3. Applies effects if triggered
+4. Returns the triggered event or null"
+
+Prompt 10: "Create helper function `checkEventTrigger(event, state)` that parses trigger strings like 'ethics': '<30' and checks probability roll."
+
+## BALANCE SYSTEM
+---
+Prompt 11: "Design a dynamic balance system V2 that:
+- Only activates after round 6
+- Applies gentle decay: decayRate = 0.08 + (round - 6) * 0.02
+- Penalizes extreme specialization (>90) with -0.5 to other stats
+- Nudges outliers toward mean (±25 from average)"
+
+Prompt 12: "Write `applyBalanceAdjustments(state)` implementing three phases: soft decay for high stats, specialist penalty, and adaptive rebalancing."
+
+## ENDING CALCULATION
+---
+Prompt 13: "Create `computeEnding(state)` that determines one of 6 endings based on priority:
+1. Balanced One: all 65-85%, maxDiff ≤20 (hardest)
+2. Ethical Guardian: ethics≥70, trust≥70
+3. Visionary Innovator: innovation≥75, profit≥75
+4. Data Dealer: profit≥70, (ethics≤35 OR trust≤35)
+5. Algorithm Overlord: innovation≥75, (ethics≤30 OR trust≤30)
+6. Stalled Bureaucrat: default"
+
+Prompt 14: "Each ending should return object with: title (emoji + text), description (what happened), legacy (long-term consequence)."
+
+## UI COMPONENTS
+---
+Prompt 15: "Write a reusable `Button({ label, variant, onClick })` component that returns a DOM element with theme-aware styling. Variants: primary, secondary, danger."
+
+Prompt 16: "Create `Card({ title, description, tags })` component that displays scenario information in a styled container with gradient header."
+
+Prompt 17: "Build `ProgressBar({ label, value, statType })` that:
+- Displays stat name and percentage
+- Renders colored fill bar based on statType (innovation/profit/trust/ethics)
+- Shows warning glow if value < 20%"
+
+Prompt 18: "Create `Modal({ title, content, variant })` that displays overlay with event information, crisis/success styling variants, and auto-dismiss after 3 seconds."
+
+Prompt 19: "Implement `AuditorCommentary({ commentary, isLoading })` component showing AI feedback with loading state (pulsing dots) and final text display."
+
+## VIEW IMPLEMENTATION
+---
+Prompt 20: "Build MenuView with:
+- Game title with gradient text effect
+- 'Start New Game' button
+- Brief instructions about balancing 4 metrics
+- Credits section"
+
+Prompt 21: "Create PlayView that:
+- Displays round counter (X/12)
+- Shows 4 progress bars for current stats
+- Renders current scenario card
+- Displays previous round's AI commentary
+- Provides 3 decision buttons (Approve/Delay/Reject)
+- Handles decision → stakeholder → event → game over check → next round flow"
+
+Prompt 22: "Implement ResultView displaying:
+- Ending title and description
+- Final stats with progress bars
+- AI-generated final analysis
+- 'Play Again' button that navigates to menu"
+
+## AI INTEGRATION (GEMINI API)
+---
+Prompt 23: "Create `judge.js` service with `generateAuditorCommentary(state, decision, context)` that:
+- Builds context-aware prompt with current stats, decision patterns
+- Calls Gemini API with temperature=0.8, maxTokens=200
+- Returns AI-generated philosophical commentary
+- Falls back to generic responses if API fails"
+
+Prompt 24: "Write `buildPrompt(state, decision, context)` that includes:
+- Round and stat status with emoji indicators (✓ >70, ~ 40-70, ! 20-40, ⚠ <20)
+- Statistical analysis (imbalance detection, critical warnings)
+- Decision pattern analysis (approve/delay/reject frequency)
+- Last decision context and impact"
+
+Prompt 25: "Implement `generateFinalAnalysis(state)` for end-game commentary that reflects on complete governance session, acknowledges ending achieved, and provides philosophical insight."
+
+Prompt 26: "Create fallback commentary templates that are contextual but don't require API: reference highest/lowest stats, predict outcome, use data/tech metaphors."
+
+## UTILITY FUNCTIONS
+---
+Prompt 27: "Write helper function `clamp(value, min, max)` that constrains numbers within range."
+
+Prompt 28: "Create `randomItem(array)` that returns random element from array."
+
+Prompt 29: "Implement `analyzeStats(stats)` that calculates: average, highest/lowest metrics, imbalance degree, critical threshold warnings."
+
+Prompt 30: "Write `analyzeDecisionTrend(history)` that examines last 3 decisions and identifies patterns: aggressive (2+ approves), conservative (2+ rejects), indecisive (2+ delays), mixed."
+
+## THEME SYSTEM
+---
+Prompt 31: "Create `theme.js` exporting color palette, typography settings, UI constants (radius, shadows, transitions), gradients, and semantic tokens."
+
+Prompt 32: "Generate CSS custom properties in :root for all theme colors: --color-background, --color-innovation, --color-profit, --color-trust, --color-ethics, etc."
+
+Prompt 33: "Write utility function `getStatColor(statType)` that returns appropriate theme color for given metric."
+
+## DATA STRUCTURES
+---
+Prompt 34: "Design JSON schema for scenarios.json with fields: id, title, category, desc, decisions{approve/delay/reject with stat impacts}, tags."
+
+Prompt 35: "Create stakeholders.json structure: id, name, concern (primary metric), mod (positive impacts), mod_negative, flavor text, reaction messages."
+
+Prompt 36: "Define events.json format: id, title, description, trigger{stat conditions + probability}, effect{stat changes}, category (crisis/positive)."
+
+## ERROR HANDLING & VALIDATION
+---
+Prompt 37: "Add try-catch blocks around API calls with graceful fallback to ensure game never breaks due to network issues."
+
+Prompt 38: "Implement data validation for JSON imports: check required fields exist, stat values are numbers, trigger conditions are valid."
+
+Prompt 39: "Add console logging for debugging: log state changes, event triggers, API responses, but don't expose sensitive data."
+
+## PERFORMANCE OPTIMIZATION
+---
+Prompt 40: "Use manual DOM manipulation instead of virtual DOM for lightweight performance—game is simple enough not to need framework overhead."
+
+Prompt 41: "Minimize re-renders: only update changed elements, cache DOM references where appropriate."
+
+Prompt 42: "Lazy-load AI commentary asynchronously so decision flow isn't blocked waiting for API response."
+
+## RESPONSIVE DESIGN CODE
+---
+Prompt 43: "Add CSS media query for mobile (<768px): stack elements vertically, increase button sizes to 44px minimum, reduce font sizes slightly."
+
+Prompt 44: "Use CSS Grid for stat bars layout that adapts from 2x2 grid on desktop to single column on mobile."
+
+## TESTING & DEBUGGING HELPERS
+---
+Prompt 45: "Create debug mode that logs: every decision impact, balance adjustments, event trigger checks, ending calculation logic."
+
+Prompt 46: "Add URL parameter support: ?debug=true enables console logging, ?stats=innovation:80,profit:60 sets starting stats for testing."
+
+Prompt 47: "Write test scenarios covering: balanced strategy reaching round 12, specialist strategy maintaining high innovation, game over at different collapse points."
+
+## DOCUMENTATION GENERATION
+---
+Prompt 48: "Generate inline JSDoc comments for all exported functions with @param, @returns, and @description tags."
+
+Prompt 49: "Create README.md with: quick start guide, gameplay instructions, technical architecture, API setup, contribution guidelines."
+
+Prompt 50: "Write IMPLEMENTATION_SUMMARY.md documenting: feature checklist, technical decisions, known limitations, future enhancements."
