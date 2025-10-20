@@ -1,0 +1,1 @@
+Prompt: "Simplify UI for mobile play, make decision buttons larger and reduce text density."

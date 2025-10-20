@@ -1,0 +1,2 @@
+Prompt : "Suggest 5 board-game concepts addressing AI ethics and data privacy."
+Prompt : "Make one of them feel global – showing conflict between innovation and human values."

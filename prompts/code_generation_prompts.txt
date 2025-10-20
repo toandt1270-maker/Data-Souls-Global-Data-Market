@@ -1,0 +1,1 @@
+Prompt: "Write JavaScript code to randomly pick scenario cards from JSON and update 4 stats (Innovation, Profit, Trust, Ethics)."

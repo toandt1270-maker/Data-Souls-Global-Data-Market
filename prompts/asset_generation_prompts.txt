@@ -1,0 +1,2 @@
+Prompt: "Generate futuristic glass-style icons for 4 metrics in 128x128px."
+Prompt: "Design background of a boardroom representing AI ethics council."
