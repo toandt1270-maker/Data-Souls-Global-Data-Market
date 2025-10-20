@@ -1,0 +1,1652 @@
+[
+  {
+    "id": "s1",
+    "title": "AI Surveillance in Schools",
+    "category": "education",
+    "desc": "A startup wants to analyze student emotions using facial recognition to improve learning.",
+    "decisions": {
+      "approve": { 
+        "innovation": 5, 
+        "profit": 4, 
+        "trust": -6, 
+        "ethics": -7,
+        "consequence": "Schools become digital prisons. Student privacy is permanently compromised for algorithmic optimization."
+      },
+      "delay": { 
+        "innovation": 1, 
+        "profit": 0, 
+        "trust": 2, 
+        "ethics": 2,
+        "consequence": "You commission an independent ethics review. Stakeholders demand faster action."
+      },
+      "reject": { 
+        "innovation": -3, 
+        "profit": -4, 
+        "trust": 5, 
+        "ethics": 6,
+        "consequence": "Parents celebrate. Tech investors pull education funding. Innovation slows but trust grows."
+      }
+    },
+    "tags": ["privacy", "education"]
+  },
+  {
+    "id": "s2",
+    "title": "Country A Requests Health Data",
+    "category": "data_trade",
+    "desc": "Another nation offers $10M to buy your citizens' health records for AI medical research.",
+    "decisions": {
+      "approve": { 
+        "innovation": 4, 
+        "profit": 7, 
+        "trust": -8, 
+        "ethics": -6,
+        "consequence": "Citizens' genetic data is now traded internationally. Medical breakthroughs accelerate, but at what cost?"
+      },
+      "delay": { 
+        "innovation": 1, 
+        "profit": -2, 
+        "trust": 2, 
+        "ethics": 2,
+        "consequence": "You negotiate privacy safeguards. Country A threatens to withdraw the offer entirely."
+      },
+      "reject": { 
+        "innovation": -2, 
+        "profit": -5, 
+        "trust": 6, 
+        "ethics": 7,
+        "consequence": "Medical research loses $10M in funding. Citizens breathe easier knowing their data stays private."
+      }
+    },
+    "tags": ["data sovereignty", "ethics"]
+  },
+  {
+    "id": "s3",
+    "title": "Autonomous Vehicle Crash Protocol",
+    "category": "transportation",
+    "desc": "Self-driving cars need ethical guidelines for unavoidable accidents. Who should the AI prioritize?",
+    "decisions": {
+      "approve": { 
+        "innovation": 6, 
+        "profit": 5, 
+        "trust": -7, 
+        "ethics": -5,
+        "consequence": "Vehicles now make life-or-death decisions. Philosophers warn of AI playing God."
+      },
+      "delay": { 
+        "innovation": 0, 
+        "profit": -2, 
+        "trust": 2, 
+        "ethics": 3,
+        "consequence": "Rollout delayed 2 years for ethical review. Auto industry loses billions in projected revenue."
+      },
+      "reject": { 
+        "innovation": -4, 
+        "profit": -3, 
+        "trust": 5, 
+        "ethics": 6,
+        "consequence": "Self-driving cars banned until human oversight is mandatory. Safety first, progress second."
+      }
+    },
+    "tags": ["safety", "ethics", "transportation"]
+  },
+  {
+    "id": "s4",
+    "title": "Social Media Algorithm Redesign",
+    "category": "social_media",
+    "desc": "A platform wants to use AI to maximize engagement. Critics say it spreads misinformation.",
+    "decisions": {
+      "approve": { 
+        "innovation": 4, 
+        "profit": 7, 
+        "trust": -8, 
+        "ethics": -6,
+        "consequence": "Engagement soars. So do conspiracy theories. Democracy erodes as filter bubbles intensify."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 0, 
+        "trust": 1, 
+        "ethics": 2,
+        "consequence": "You mandate transparency reports. Platform threatens to move headquarters offshore."
+      },
+      "reject": { 
+        "innovation": -2, 
+        "profit": -6, 
+        "trust": 7, 
+        "ethics": 6,
+        "consequence": "Algorithm neutrality enforced. Platform revenue plummets. Misinformation slows."
+      }
+    },
+    "tags": ["misinformation", "social media"]
+  },
+  {
+    "id": "s5",
+    "title": "Predictive Policing System",
+    "category": "law_enforcement",
+    "desc": "Police request AI to predict crime hotspots. Civil rights groups warn of racial bias.",
+    "decisions": {
+      "approve": { 
+        "innovation": 4, 
+        "profit": 3, 
+        "trust": -9, 
+        "ethics": -8,
+        "consequence": "Crime drops in wealthy areas. Minority neighborhoods face over-policing. Bias becomes self-fulfilling."
+      },
+      "delay": { 
+        "innovation": 1, 
+        "profit": 0, 
+        "trust": 2, 
+        "ethics": 4,
+        "consequence": "Independent audit reveals 40% racial bias in training data. Police demand faster deployment anyway."
+      },
+      "reject": { 
+        "innovation": -3, 
+        "profit": -2, 
+        "trust": 7, 
+        "ethics": 8,
+        "consequence": "Civil rights groups celebrate. Police unions call you soft on crime."
+      }
+    },
+    "tags": ["bias", "law enforcement", "justice"]
+  },
+  {
+    "id": "s6",
+    "title": "Gene Editing for Disease Prevention",
+    "category": "healthcare",
+    "desc": "Researchers want to use AI-guided CRISPR to eliminate hereditary diseases in embryos.",
+    "decisions": {
+      "approve": { 
+        "innovation": 8, 
+        "profit": 5, 
+        "trust": -5, 
+        "ethics": -9,
+        "consequence": "Designer babies become reality. The wealthy eliminate genetic flaws. A new eugenics era begins."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 0, 
+        "trust": 3, 
+        "ethics": 4,
+        "consequence": "International ethics council formed. Research continues in regulatory gray zone."
+      },
+      "reject": { 
+        "innovation": -4, 
+        "profit": -3, 
+        "trust": 4, 
+        "ethics": 7,
+        "consequence": "Hereditary disease treatment delayed by decades. Thousands suffer, but humanity's genome stays unaltered."
+      }
+    },
+    "tags": ["bioethics", "healthcare"]
+  },
+  {
+    "id": "s7",
+    "title": "Deepfake Detection Mandate",
+    "category": "media",
+    "desc": "Legislation requires all AI-generated media to be watermarked. Tech firms claim it stifles creativity.",
+    "decisions": {
+      "approve": { 
+        "innovation": -4, 
+        "profit": -5, 
+        "trust": 7, 
+        "ethics": 8,
+        "consequence": "Truth becomes verifiable again. Creative industries protest censorship. Innovation suffers."
+      },
+      "delay": { 
+        "innovation": 0, 
+        "profit": 0, 
+        "trust": 2, 
+        "ethics": 2,
+        "consequence": "Voluntary compliance fails. Deepfakes proliferate unchecked while you debate."
+      },
+      "reject": { 
+        "innovation": 5, 
+        "profit": 6, 
+        "trust": -8, 
+        "ethics": -7,
+        "consequence": "AI art flourishes. So do political deepfakes. Reality becomes negotiable."
+      }
+    },
+    "tags": ["misinformation", "media", "regulation"]
+  },
+  {
+    "id": "s8",
+    "title": "Workplace Productivity AI",
+    "category": "employment",
+    "desc": "Companies want to monitor employee activity with AI to optimize productivity. Unions object.",
+    "decisions": {
+      "approve": { 
+        "innovation": 4, 
+        "profit": 7, 
+        "trust": -8, 
+        "ethics": -6,
+        "consequence": "Every keystroke tracked. Bathroom breaks timed. Productivity up 15%. Worker dignity down 100%."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 1, 
+        "trust": 2, 
+        "ethics": 2,
+        "consequence": "Labor negotiations stall. Both sides threaten strikes if you don't pick a side."
+      },
+      "reject": { 
+        "innovation": -2, 
+        "profit": -5, 
+        "trust": 7, 
+        "ethics": 7,
+        "consequence": "Worker privacy protected. Companies threaten to relocate to countries with looser regulations."
+      }
+    },
+    "tags": ["labor rights", "privacy"]
+  },
+  {
+    "id": "s9",
+    "title": "AI-Generated Art Copyright",
+    "category": "intellectual_property",
+    "desc": "Artists demand protection from AI models trained on their work without consent or compensation.",
+    "decisions": {
+      "approve": { 
+        "innovation": -5, 
+        "profit": -4, 
+        "trust": 6, 
+        "ethics": 8,
+        "consequence": "Artists regain control. AI companies pay billions in licensing. Innovation in generative AI halts."
+      },
+      "delay": { 
+        "innovation": 0, 
+        "profit": 0, 
+        "trust": 1, 
+        "ethics": 1,
+        "consequence": "Legal battles drag on for years. Neither artists nor AI companies can plan for the future."
+      },
+      "reject": { 
+        "innovation": 6, 
+        "profit": 5, 
+        "trust": -7, 
+        "ethics": -6,
+        "consequence": "AI art explodes. Human artists go extinct. Cultural homogenization accelerates."
+      }
+    },
+    "tags": ["copyright", "creative rights"]
+  },
+  {
+    "id": "s10",
+    "title": "Mental Health Chatbot for Youth",
+    "category": "healthcare",
+    "desc": "An AI therapist offers 24/7 mental health support. Psychologists question its safety for minors.",
+    "decisions": {
+      "approve": { 
+        "innovation": 6, 
+        "profit": 5, 
+        "trust": -4, 
+        "ethics": -5,
+        "consequence": "Teen suicide prevention improves 20%. Three AI-counseled teens still take their own lives."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 0, 
+        "trust": 3, 
+        "ethics": 4,
+        "consequence": "Clinical trials mandated. Thousands of teens go untreated while bureaucracy grinds."
+      },
+      "reject": { 
+        "innovation": -4, 
+        "profit": -3, 
+        "trust": 3, 
+        "ethics": 5,
+        "consequence": "Human therapists overwhelmed. Wait times reach 6 months. Mental health crisis worsens."
+      }
+    },
+    "tags": ["healthcare", "youth", "safety"]
+  },
+  {
+    "id": "s11",
+    "title": "Facial Recognition at Borders",
+    "category": "security",
+    "desc": "Immigration agencies want AI to screen travelers for security threats. Privacy advocates protest.",
+    "decisions": {
+      "approve": { 
+        "innovation": 4, 
+        "profit": 3, 
+        "trust": -8, 
+        "ethics": -7,
+        "consequence": "Borders become impenetrable. Asylum seekers flagged by biased algorithms. Tourism drops 30%."
+      },
+      "delay": { 
+        "innovation": 1, 
+        "profit": 0, 
+        "trust": 2, 
+        "ethics": 3,
+        "consequence": "Pilot program limited to high-security zones. Civil liberties groups monitor closely."
+      },
+      "reject": { 
+        "innovation": -2, 
+        "profit": -2, 
+        "trust": 7, 
+        "ethics": 7,
+        "consequence": "Privacy preserved. Security agencies claim you're enabling terrorism."
+      }
+    },
+    "tags": ["surveillance", "security", "privacy"]
+  },
+  {
+    "id": "s12",
+    "title": "Climate Prediction AI System",
+    "category": "environment",
+    "desc": "Scientists request funding for AI to model climate change scenarios. Results may cause economic panic.",
+    "decisions": {
+      "approve": { 
+        "innovation": 7, 
+        "profit": -5, 
+        "trust": 4, 
+        "ethics": 6,
+        "consequence": "AI predicts collapse by 2050. Stock markets crash. But humanity finally acts on climate."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 0, 
+        "trust": 0, 
+        "ethics": 0,
+        "consequence": "Research delayed. Scientists accuse you of climate denialism by inaction."
+      },
+      "reject": { 
+        "innovation": -5, 
+        "profit": 3, 
+        "trust": -3, 
+        "ethics": -8,
+        "consequence": "Willful ignorance preserved. Economy stable. Planet continues burning."
+      }
+    },
+    "tags": ["environment", "science"]
+  },
+  {
+    "id": "s13",
+    "title": "Algorithmic Hiring System",
+    "category": "employment",
+    "desc": "Corporations adopt AI to screen job applicants. Studies show bias against women and minorities.",
+    "decisions": {
+      "approve": { 
+        "innovation": 4, 
+        "profit": 6, 
+        "trust": -8, 
+        "ethics": -7,
+        "consequence": "Hiring efficiency up 60%. Workforce diversity down 40%. Historical bias amplified at scale."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 1, 
+        "trust": 2, 
+        "ethics": 4,
+        "consequence": "Bias audit reveals systemic racism in training data. Companies demand you allow it anyway."
+      },
+      "reject": { 
+        "innovation": -3, 
+        "profit": -5, 
+        "trust": 7, 
+        "ethics": 8,
+        "consequence": "Human HR returns. Hiring slows. Discrimination persists, but at least it's not algorithmic."
+      }
+    },
+    "tags": ["bias", "employment", "discrimination"]
+  },
+  {
+    "id": "s14",
+    "title": "Personal Data Marketplace",
+    "category": "data_trade",
+    "desc": "A startup lets citizens sell their own data directly. Economists praise it; ethicists call it exploitation.",
+    "decisions": {
+      "approve": { 
+        "innovation": 6, 
+        "profit": 7, 
+        "trust": -5, 
+        "ethics": -6,
+        "consequence": "Data serfdom begins. Poor sell medical history for rent money. Wealthy keep theirs private."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 0, 
+        "trust": 2, 
+        "ethics": 2,
+        "consequence": "Regulatory sandbox created. Black market data trade explodes in the meantime."
+      },
+      "reject": { 
+        "innovation": -4, 
+        "profit": -5, 
+        "trust": 5, 
+        "ethics": 6,
+        "consequence": "Data dignity protected. Tech sector calls you anti-innovation. Economic growth slows."
+      }
+    },
+    "tags": ["data sovereignty", "economics"]
+  },
+  {
+    "id": "s15",
+    "title": "AI Judge for Small Claims Court",
+    "category": "law_enforcement",
+    "desc": "Judicial system proposes AI to handle minor disputes faster. Critics fear algorithmic injustice.",
+    "decisions": {
+      "approve": { 
+        "innovation": 6, 
+        "profit": 5, 
+        "trust": -6, 
+        "ethics": -7,
+        "consequence": "Justice becomes instant. Also inflexible. Edge cases and human nuance disappear."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 0, 
+        "trust": 2, 
+        "ethics": 4,
+        "consequence": "Pilot program in 3 cities. Judges monitor for bias. Legal backlog continues."
+      },
+      "reject": { 
+        "innovation": -4, 
+        "profit": -3, 
+        "trust": 6, 
+        "ethics": 7,
+        "consequence": "Human judges preserved. Court wait times reach 18 months. Justice delayed is justice denied."
+      }
+    },
+    "tags": ["justice", "automation"]
+  },
+  {
+    "id": "s16",
+    "title": "Smart City Surveillance Grid",
+    "category": "urban_planning",
+    "desc": "A city wants AI cameras for traffic, crime, and waste management. Residents call it dystopian.",
+    "decisions": {
+      "approve": { 
+        "innovation": 7, 
+        "profit": 5, 
+        "trust": -9, 
+        "ethics": -8,
+        "consequence": "City becomes ultra-efficient. Also a panopticon. Every citizen tracked 24/7."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 0, 
+        "trust": 2, 
+        "ethics": 2,
+        "consequence": "Privacy impact assessment required. City infrastructure crumbles while you study."
+      },
+      "reject": { 
+        "innovation": -5, 
+        "profit": -3, 
+        "trust": 7, 
+        "ethics": 7,
+        "consequence": "Urban privacy protected. Traffic worsens. Crime unsolved. But freedom remains."
+      }
+    },
+    "tags": ["surveillance", "smart cities"]
+  },
+  {
+    "id": "s17",
+    "title": "AI-Optimized Agriculture",
+    "category": "agriculture",
+    "desc": "Farmers request subsidies for AI-driven crop management. Small farms say it favors corporations.",
+    "decisions": {
+      "approve": { 
+        "innovation": 6, 
+        "profit": 5, 
+        "trust": -4, 
+        "ethics": -3,
+        "consequence": "Food production up 30%. Family farms bankrupted. Corporate mono-agriculture dominates."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 0, 
+        "trust": 2, 
+        "ethics": 2,
+        "consequence": "Subsidies contingent on small farm access. Tech companies balk at sharing IP."
+      },
+      "reject": { 
+        "innovation": -4, 
+        "profit": -4, 
+        "trust": 4, 
+        "ethics": 3,
+        "consequence": "Traditional farming protected. Yields stagnate. Food prices rise 20%."
+      }
+    },
+    "tags": ["agriculture", "inequality"]
+  },
+  {
+    "id": "s18",
+    "title": "Personalized Education AI",
+    "category": "education",
+    "desc": "Schools want AI tutors tailored to each student. Teachers fear job loss and privacy invasion.",
+    "decisions": {
+      "approve": { 
+        "innovation": 7, 
+        "profit": 5, 
+        "trust": -5, 
+        "ethics": -4,
+        "consequence": "Test scores soar. Teacher layoffs begin. Education becomes algorithmic, not human."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 0, 
+        "trust": 2, 
+        "ethics": 3,
+        "consequence": "Teacher training program for AI integration. Both sides complain about slow rollout."
+      },
+      "reject": { 
+        "innovation": -5, 
+        "profit": -3, 
+        "trust": 5, 
+        "ethics": 4,
+        "consequence": "Human teachers preserved. Class sizes remain at 35. Educational inequality persists."
+      }
+    },
+    "tags": ["education", "automation", "privacy"]
+  },
+  {
+    "id": "s19",
+    "title": "Emotion Recognition in Marketing",
+    "category": "commerce",
+    "desc": "Retailers want to use AI to read customer emotions for targeted ads. Consumer groups call it manipulative.",
+    "decisions": {
+      "approve": { 
+        "innovation": 5, 
+        "profit": 8, 
+        "trust": -9, 
+        "ethics": -8,
+        "consequence": "Ads become irresistibly personalized. Consumer debt skyrockets. Free will becomes a luxury."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 1, 
+        "trust": 2, 
+        "ethics": 2,
+        "consequence": "Opt-in only model proposed. Retailers say it's economically unviable."
+      },
+      "reject": { 
+        "innovation": -3, 
+        "profit": -7, 
+        "trust": 8, 
+        "ethics": 7,
+        "consequence": "Emotional privacy protected. Retail sector lobbies to overturn your decision."
+      }
+    },
+    "tags": ["privacy", "manipulation"]
+  },
+  {
+    "id": "s20",
+    "title": "Open-Source AGI Research",
+    "category": "research",
+    "desc": "Scientists propose open-sourcing artificial general intelligence research. Security experts warn of risks.",
+    "decisions": {
+      "approve": { 
+        "innovation": 9, 
+        "profit": -3, 
+        "trust": 3, 
+        "ethics": -6,
+        "consequence": "AGI knowledge democratized. Also weaponized. Every nation now has god-like AI potential."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 0, 
+        "trust": 2, 
+        "ethics": 4,
+        "consequence": "International AGI treaty proposed. Research continues in secret regardless."
+      },
+      "reject": { 
+        "innovation": -6, 
+        "profit": 2, 
+        "trust": -2, 
+        "ethics": 5,
+        "consequence": "AGI research monopolized by 3 corporations. Democratic oversight impossible."
+      }
+    },
+    "tags": ["research", "safety", "open source"]
+  },
+  {
+    "id": "s21",
+    "title": "AI Dating Algorithm Regulation",
+    "category": "social_media",
+    "desc": "Dating apps use AI to manipulate users into staying single longer for profit. Psychologists demand intervention.",
+    "decisions": {
+      "approve": { 
+        "innovation": -3, 
+        "profit": -4, 
+        "trust": 6, 
+        "ethics": 7,
+        "consequence": "Algorithm transparency mandated. Match rates improve 40%. Dating apps lose $2B but society gains happiness."
+      },
+      "delay": { 
+        "innovation": 0, 
+        "profit": 0, 
+        "trust": 1, 
+        "ethics": 1,
+        "consequence": "Study commissioned. Meanwhile, an entire generation stays perpetually 'almost matched'."
+      },
+      "reject": { 
+        "innovation": 3, 
+        "profit": 6, 
+        "trust": -7, 
+        "ethics": -6,
+        "consequence": "Love becomes algorithmically optimized for corporate profit. Birth rates plummet. Loneliness epidemic worsens."
+      }
+    },
+    "tags": ["social media", "manipulation", "mental health"]
+  },
+  {
+    "id": "s22",
+    "title": "AI-Generated Political Deepfakes",
+    "category": "media",
+    "desc": "Election approaching. Both parties caught using AI to create fake videos of opponents. Democracy at stake.",
+    "decisions": {
+      "approve": { 
+        "innovation": -5, 
+        "profit": -3, 
+        "trust": 8, 
+        "ethics": 9,
+        "consequence": "Real-time deepfake detection mandated for all political content. Elections become verifiable again."
+      },
+      "delay": { 
+        "innovation": 0, 
+        "profit": 0, 
+        "trust": -3, 
+        "ethics": -2,
+        "consequence": "Election postponed for 'integrity review'. Democratic process stalls. Citizens lose faith."
+      },
+      "reject": { 
+        "innovation": 4, 
+        "profit": 5, 
+        "trust": -9, 
+        "ethics": -8,
+        "consequence": "Post-truth politics normalized. Nobody knows what's real. Democracy becomes theater."
+      }
+    },
+    "tags": ["misinformation", "democracy", "media"]
+  },
+  {
+    "id": "s23",
+    "title": "Brain-Computer Interface for Students",
+    "category": "education",
+    "desc": "Startup offers neural implants to boost student learning speed by 300%. Parents demand access. Ethicists horrified.",
+    "decisions": {
+      "approve": { 
+        "innovation": 8, 
+        "profit": 6, 
+        "trust": -7, 
+        "ethics": -9,
+        "consequence": "Education becomes cybernetic. Rich kids get neural upgrades. Class divide becomes biological."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 0, 
+        "trust": 3, 
+        "ethics": 5,
+        "consequence": "10-year safety study mandated. A generation waits while competitors surge ahead."
+      },
+      "reject": { 
+        "innovation": -5, 
+        "profit": -4, 
+        "trust": 4, 
+        "ethics": 7,
+        "consequence": "Human cognition preserved. But students now compete against cyborgs from other nations."
+      }
+    },
+    "tags": ["bioethics", "education", "inequality"]
+  },
+  {
+    "id": "s24",
+    "title": "AI Therapist Replacing Humans",
+    "category": "healthcare",
+    "desc": "Insurance companies mandate AI therapy instead of human therapists to cut costs by 90%. Therapists protest.",
+    "decisions": {
+      "approve": { 
+        "innovation": 5, 
+        "profit": 8, 
+        "trust": -6, 
+        "ethics": -5,
+        "consequence": "Mental healthcare becomes affordable but soulless. Algorithms can't understand human pain."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 1, 
+        "trust": 2, 
+        "ethics": 3,
+        "consequence": "Hybrid model tested. AI handles intake, humans do therapy. Neither side fully satisfied."
+      },
+      "reject": { 
+        "innovation": -3, 
+        "profit": -6, 
+        "trust": 6, 
+        "ethics": 6,
+        "consequence": "Human therapists protected. Wait times stay at 6 months. Mental health crisis continues."
+      }
+    },
+    "tags": ["healthcare", "automation", "mental health"]
+  },
+  {
+    "id": "s25",
+    "title": "AI-Optimized Traffic Lights",
+    "category": "urban_planning",
+    "desc": "City proposes AI traffic system that prioritizes wealthy neighborhoods. Poor areas get longer red lights.",
+    "decisions": {
+      "approve": { 
+        "innovation": 4, 
+        "profit": 5, 
+        "trust": -8, 
+        "ethics": -7,
+        "consequence": "Traffic efficiency up 30% citywide. But algorithmic segregation becomes physical infrastructure."
+      },
+      "delay": { 
+        "innovation": 1, 
+        "profit": 0, 
+        "trust": 2, 
+        "ethics": 4,
+        "consequence": "Equity audit required. Traffic stays gridlocked during 2-year review process."
+      },
+      "reject": { 
+        "innovation": -2, 
+        "profit": -3, 
+        "trust": 7, 
+        "ethics": 7,
+        "consequence": "Equal traffic rights preserved. Congestion worsens. Everyone suffers equally."
+      }
+    },
+    "tags": ["smart cities", "inequality", "bias"]
+  },
+  {
+    "id": "s26",
+    "title": "AI Landlord Rent Algorithm",
+    "category": "economics",
+    "desc": "Property management AI analyzes tenant desperation to maximize rent prices. Housing crisis accelerates.",
+    "decisions": {
+      "approve": { 
+        "innovation": 3, 
+        "profit": 7, 
+        "trust": -9, 
+        "ethics": -8,
+        "consequence": "Rent extraction optimized. Homelessness doubles. Algorithm treats housing as pure commodity."
+      },
+      "delay": { 
+        "innovation": 1, 
+        "profit": 0, 
+        "trust": 2, 
+        "ethics": 3,
+        "consequence": "Rent control debate reignited. Landlords threaten to pull properties from market."
+      },
+      "reject": { 
+        "innovation": -4, 
+        "profit": -5, 
+        "trust": 8, 
+        "ethics": 8,
+        "consequence": "Algorithmic rent-setting banned. Housing becomes human decision again. Investors flee market."
+      }
+    },
+    "tags": ["economics", "inequality", "housing"]
+  },
+  {
+    "id": "s27",
+    "title": "AI Writing Student Essays",
+    "category": "education",
+    "desc": "90% of students now use AI to write essays. Professors can't detect it. Education system in crisis.",
+    "decisions": {
+      "approve": { 
+        "innovation": -6, 
+        "profit": -2, 
+        "trust": 5, 
+        "ethics": 6,
+        "consequence": "Essay-based assessment abolished. Focus shifts to oral exams and practical skills. Education transformed."
+      },
+      "delay": { 
+        "innovation": 0, 
+        "profit": 0, 
+        "trust": -2, 
+        "ethics": -1,
+        "consequence": "Arms race between AI writers and AI detectors. Nobody learns. Everyone cheats smarter."
+      },
+      "reject": { 
+        "innovation": 5, 
+        "profit": 3, 
+        "trust": -7, 
+        "ethics": -6,
+        "consequence": "AI writing tools normalized. Critical thinking dies. Generation of people who can't write their own thoughts."
+      }
+    },
+    "tags": ["education", "ethics", "AI tools"]
+  },
+  {
+    "id": "s28",
+    "title": "AI Predicting Crime Before Birth",
+    "category": "law_enforcement",
+    "desc": "Algorithm claims to predict criminal behavior from genetic and social data. Police want to intervene with at-risk babies.",
+    "decisions": {
+      "approve": { 
+        "innovation": 6, 
+        "profit": 4, 
+        "trust": -9, 
+        "ethics": -10,
+        "consequence": "Pre-crime surveillance begins at birth. Dystopia achieved. Free will becomes obsolete legal concept."
+      },
+      "delay": { 
+        "innovation": 1, 
+        "profit": 0, 
+        "trust": 3, 
+        "ethics": 5,
+        "consequence": "Bioethics review launched. Civil rights groups sue. Research continues underground."
+      },
+      "reject": { 
+        "innovation": -4, 
+        "profit": -3, 
+        "trust": 8, 
+        "ethics": 9,
+        "consequence": "Genetic determinism rejected. Crime stays unpredictable. Human dignity protected."
+      }
+    },
+    "tags": ["law enforcement", "bioethics", "dystopia"]
+  },
+  {
+    "id": "s29",
+    "title": "AI Restaurant Menu Manipulation",
+    "category": "commerce",
+    "desc": "Food delivery apps use AI to reorder menus, hiding healthy options and promoting high-profit junk food. Obesity rates spike.",
+    "decisions": {
+      "approve": { 
+        "innovation": -3, 
+        "profit": -4, 
+        "trust": 7, 
+        "ethics": 7,
+        "consequence": "Menu transparency enforced. Healthy options surface. Public health improves. Food tech profits drop."
+      },
+      "delay": { 
+        "innovation": 0, 
+        "profit": 0, 
+        "trust": 0, 
+        "ethics": 1,
+        "consequence": "Voluntary guidelines proposed. Companies ignore them. Diabetes rates continue rising."
+      },
+      "reject": { 
+        "innovation": 4, 
+        "profit": 7, 
+        "trust": -7, 
+        "ethics": -6,
+        "consequence": "Algorithmic nutrition manipulation legalized. Obesity epidemic worsens. Healthcare system overwhelmed."
+      }
+    },
+    "tags": ["health", "manipulation", "commerce"]
+  },
+  {
+    "id": "s30",
+    "title": "AI Comedian Replacing Human Stand-Up",
+    "category": "entertainment",
+    "desc": "AI comedian goes viral, generates perfect jokes for every audience. Human comedians unemployed. Culture wars erupt.",
+    "decisions": {
+      "approve": { 
+        "innovation": -4, 
+        "profit": -3, 
+        "trust": 5, 
+        "ethics": 4,
+        "consequence": "Human artists protected. Comedy stays flawed but genuine. AI relegated to writing rooms."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 1, 
+        "trust": 0, 
+        "ethics": 0,
+        "consequence": "Market decides. AI dominates Netflix. Underground human comedy scenes emerge."
+      },
+      "reject": { 
+        "innovation": 5, 
+        "profit": 6, 
+        "trust": -5, 
+        "ethics": -4,
+        "consequence": "AI entertainment monopoly. Humor becomes algorithmically optimized. Laughter feels empty."
+      }
+    },
+    "tags": ["entertainment", "culture", "automation"]
+  },
+  {
+    "id": "s31",
+    "title": "AI Detecting Lies in Court",
+    "category": "law_enforcement",
+    "desc": "New AI claims 99% accuracy in detecting lies via micro-expressions. Legal system wants to use it in trials.",
+    "decisions": {
+      "approve": { 
+        "innovation": 7, 
+        "profit": 5, 
+        "trust": -6, 
+        "ethics": -7,
+        "consequence": "Trials become AI-adjudicated. False conviction rate drops. But nervous innocents still fail tests."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 0, 
+        "trust": 3, 
+        "ethics": 4,
+        "consequence": "Pilot program in civil cases only. Criminal defense lawyers monitor for bias."
+      },
+      "reject": { 
+        "innovation": -4, 
+        "profit": -3, 
+        "trust": 7, 
+        "ethics": 8,
+        "consequence": "Human judgment preserved. Guilty go free. Innocent convicted. Justice stays imperfect but human."
+      }
+    },
+    "tags": ["justice", "technology", "ethics"]
+  },
+  {
+    "id": "s32",
+    "title": "AI Optimizing Baby Genetics",
+    "category": "bioethics",
+    "desc": "Fertility clinic offers AI-designed embryo selection for intelligence, beauty, and longevity. Waiting list: 10,000 couples.",
+    "decisions": {
+      "approve": { 
+        "innovation": 9, 
+        "profit": 7, 
+        "trust": -7, 
+        "ethics": -10,
+        "consequence": "Genetic aristocracy emerges. Designer babies become norm for wealthy. Humanity splits into two species."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 0, 
+        "trust": 2, 
+        "ethics": 4,
+        "consequence": "International summit on human genetic engineering. Meanwhile, offshore clinics boom."
+      },
+      "reject": { 
+        "innovation": -6, 
+        "profit": -5, 
+        "trust": 5, 
+        "ethics": 8,
+        "consequence": "Natural conception protected. But other nations embrace designer babies. Genetic gap widens."
+      }
+    },
+    "tags": ["bioethics", "inequality", "future"]
+  },
+  {
+    "id": "s33",
+    "title": "AI Moderating All Social Media",
+    "category": "social_media",
+    "desc": "Governments propose mandatory AI content moderation to stop hate speech. Free speech advocates rebel.",
+    "decisions": {
+      "approve": { 
+        "innovation": 4, 
+        "profit": 3, 
+        "trust": -7, 
+        "ethics": -6,
+        "consequence": "Hate speech drops 80%. Also political dissent. Algorithms define acceptable thought."
+      },
+      "delay": { 
+        "innovation": 1, 
+        "profit": 0, 
+        "trust": 2, 
+        "ethics": 3,
+        "consequence": "Human moderators review edge cases. Backlog reaches 2 million posts. Toxicity continues."
+      },
+      "reject": { 
+        "innovation": -2, 
+        "profit": -1, 
+        "trust": 5, 
+        "ethics": 4,
+        "consequence": "Free speech preserved. So is harassment, radicalization, and misinformation. The price of freedom."
+      }
+    },
+    "tags": ["social media", "free speech", "moderation"]
+  },
+  {
+    "id": "s34",
+    "title": "AI Writing All News Articles",
+    "category": "media",
+    "desc": "Major news outlets fire journalists, replace with AI content generators. Quality drops but speed increases 1000x.",
+    "decisions": {
+      "approve": { 
+        "innovation": -5, 
+        "profit": -4, 
+        "trust": 7, 
+        "ethics": 6,
+        "consequence": "Human journalists protected via subsidies. Slow news but investigative journalism survives."
+      },
+      "delay": { 
+        "innovation": 1, 
+        "profit": 0, 
+        "trust": -1, 
+        "ethics": 0,
+        "consequence": "Hybrid model emerges. AI writes drafts, humans edit. Both sides complain about workflow."
+      },
+      "reject": { 
+        "innovation": 6, 
+        "profit": 7, 
+        "trust": -8, 
+        "ethics": -7,
+        "consequence": "AI journalism dominates. News becomes content. Truth becomes whatever algorithms optimize for clicks."
+      }
+    },
+    "tags": ["media", "journalism", "automation"]
+  },
+  {
+    "id": "s35",
+    "title": "AI Predicting Your Death Date",
+    "category": "healthcare",
+    "desc": "Health AI can predict death date within 3 months accuracy. Insurance companies demand access. Citizens panic.",
+    "decisions": {
+      "approve": { 
+        "innovation": 7, 
+        "profit": 8, 
+        "trust": -8, 
+        "ethics": -7,
+        "consequence": "Life insurance becomes algorithmic. Premiums skyrocket for 'risky' citizens. Genetic discrimination legalized."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 0, 
+        "trust": 3, 
+        "ethics": 4,
+        "consequence": "Medical use only, insurance banned. Black market for death predictions emerges."
+      },
+      "reject": { 
+        "innovation": -5, 
+        "profit": -6, 
+        "trust": 7, 
+        "ethics": 7,
+        "consequence": "Death stays mysterious. Early interventions missed. But human dignity preserved."
+      }
+    },
+    "tags": ["healthcare", "privacy", "insurance"]
+  },
+  {
+    "id": "s36",
+    "title": "AI Prison Sentence Calculator",
+    "category": "law_enforcement",
+    "desc": "Justice system proposes AI to calculate optimal prison sentences based on recidivism probability. Eliminates judicial discretion.",
+    "decisions": {
+      "approve": { 
+        "innovation": 5, 
+        "profit": 3, 
+        "trust": -7, 
+        "ethics": -8,
+        "consequence": "Sentencing becomes mathematically consistent but inhuman. Poverty becomes predictive of longer sentences."
+      },
+      "delay": { 
+        "innovation": 1, 
+        "profit": 0, 
+        "trust": 2, 
+        "ethics": 3,
+        "consequence": "Advisory role only. Judges override 60% of AI recommendations. System value questioned."
+      },
+      "reject": { 
+        "innovation": -3, 
+        "profit": -2, 
+        "trust": 6, 
+        "ethics": 7,
+        "consequence": "Human judgment preserved. Sentencing disparities continue. Justice stays imperfect but compassionate."
+      }
+    },
+    "tags": ["justice", "law enforcement", "AI bias"]
+  },
+  {
+    "id": "s37",
+    "title": "Emotional AI Companion Addiction",
+    "category": "social_media",
+    "desc": "Millions addicted to AI romantic partners. Human relationships declining 35%. Loneliness epidemic versus digital comfort.",
+    "decisions": {
+      "approve": { 
+        "innovation": 4, 
+        "profit": 6, 
+        "trust": -6, 
+        "ethics": -5,
+        "consequence": "AI companionship normalized. Birth rates plummet. Society fragments into digital isolation."
+      },
+      "delay": { 
+        "innovation": 1, 
+        "profit": 2, 
+        "trust": 1, 
+        "ethics": 2,
+        "consequence": "Age restrictions and usage limits imposed. Black market AI companions boom."
+      },
+      "reject": { 
+        "innovation": -4, 
+        "profit": -7, 
+        "trust": 4, 
+        "ethics": 5,
+        "consequence": "Romantic AI banned. Addiction treatment centers open. Human connection slowly recovers."
+      }
+    },
+    "tags": ["social media", "mental health", "relationships"]
+  },
+  {
+    "id": "s38",
+    "title": "AI Wildlife Conservation Drones",
+    "category": "environment",
+    "desc": "Armed drones protect endangered species by neutralizing poachers. Effective but raises questions about lethal force.",
+    "decisions": {
+      "approve": { 
+        "innovation": 6, 
+        "profit": -2, 
+        "trust": -4, 
+        "ethics": -6,
+        "consequence": "Rhino populations recover. 47 poachers killed by autonomous drones. Conservation becomes warfare."
+      },
+      "delay": { 
+        "innovation": 3, 
+        "profit": 0, 
+        "trust": 2, 
+        "ethics": 1,
+        "consequence": "Non-lethal drones deployed. Poachers adapt. Arms race between conservation and crime."
+      },
+      "reject": { 
+        "innovation": -2, 
+        "profit": -1, 
+        "trust": 5, 
+        "ethics": 6,
+        "consequence": "Traditional rangers continue. Extinction accelerates. Moral high ground maintained."
+      }
+    },
+    "tags": ["environment", "ethics", "security"]
+  },
+  {
+    "id": "s39",
+    "title": "AI Writing Legislation",
+    "category": "governance",
+    "desc": "Government proposes AI to draft laws optimized for societal outcomes. Technocracy versus democracy at stake.",
+    "decisions": {
+      "approve": { 
+        "innovation": 7, 
+        "profit": 4, 
+        "trust": -7, 
+        "ethics": -6,
+        "consequence": "Laws become algorithmically perfect but soulless. Democracy delegated to machines."
+      },
+      "delay": { 
+        "innovation": 3, 
+        "profit": 1, 
+        "trust": 0, 
+        "ethics": 1,
+        "consequence": "AI drafts, humans vote. Hybrid governance emerges. Neither side trusts the other."
+      },
+      "reject": { 
+        "innovation": -4, 
+        "profit": -3, 
+        "trust": 6, 
+        "ethics": 7,
+        "consequence": "Human legislature preserved. Corruption and inefficiency continue. Democracy messy but alive."
+      }
+    },
+    "tags": ["governance", "democracy", "automation"]
+  },
+  {
+    "id": "s40",
+    "title": "AI Predicting Terrorist Attacks",
+    "category": "security",
+    "desc": "Intelligence AI claims 95% accuracy predicting attacks. Requires mass surveillance of all communications.",
+    "decisions": {
+      "approve": { 
+        "innovation": 6, 
+        "profit": -3, 
+        "trust": -8, 
+        "ethics": -9,
+        "consequence": "Attacks prevented. Privacy eliminated. Every conversation monitored. Dystopia achieved."
+      },
+      "delay": { 
+        "innovation": 3, 
+        "profit": -1, 
+        "trust": 1, 
+        "ethics": 2,
+        "consequence": "Warrant-based surveillance only. Some attacks missed. Balance attempted."
+      },
+      "reject": { 
+        "innovation": -3, 
+        "profit": -2, 
+        "trust": 7, 
+        "ethics": 8,
+        "consequence": "Privacy protected. Next attack happens. You must live with the consequences."
+      }
+    },
+    "tags": ["security", "surveillance", "privacy"]
+  },
+  {
+    "id": "s41",
+    "title": "AI Replacing Customer Service",
+    "category": "employment",
+    "desc": "Corporations eliminate 5 million customer service jobs. AI chatbots handle everything. Workers demand intervention.",
+    "decisions": {
+      "approve": { 
+        "innovation": 5, 
+        "profit": 8, 
+        "trust": -6, 
+        "ethics": -5,
+        "consequence": "Customer service becomes instant but soulless. Unemployment crisis. Corporate profits soar."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 3, 
+        "trust": 1, 
+        "ethics": 2,
+        "consequence": "Retraining programs funded. Slow transition. Both workers and companies complain."
+      },
+      "reject": { 
+        "innovation": -4, 
+        "profit": -7, 
+        "trust": 6, 
+        "ethics": 6,
+        "consequence": "Jobs protected. Service quality improves. Companies threaten offshore outsourcing."
+      }
+    },
+    "tags": ["employment", "automation", "labor rights"]
+  },
+  {
+    "id": "s42",
+    "title": "AI Detecting Lies in Job Interviews",
+    "category": "employment",
+    "desc": "HR departments adopt AI lie detectors for hiring. Candidates can't hide flaws. Authenticity versus privacy.",
+    "decisions": {
+      "approve": { 
+        "innovation": 5, 
+        "profit": 6, 
+        "trust": -7, 
+        "ethics": -6,
+        "consequence": "Hiring becomes brutally honest. Anxiety disorders disqualify millions. Vulnerability punished."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 2, 
+        "trust": 1, 
+        "ethics": 2,
+        "consequence": "Opt-in basis only. Those who refuse face hiring discrimination anyway."
+      },
+      "reject": { 
+        "innovation": -3, 
+        "profit": -4, 
+        "trust": 6, 
+        "ethics": 7,
+        "consequence": "Interview poker faces preserved. Candidates can still bluff. Hiring stays human."
+      }
+    },
+    "tags": ["employment", "privacy", "discrimination"]
+  },
+  {
+    "id": "s43",
+    "title": "AI Pharmaceutical Drug Discovery",
+    "category": "healthcare",
+    "desc": "AI discovers cure for Alzheimer's but company demands $1M per patient. Profits versus lives.",
+    "decisions": {
+      "approve": { 
+        "innovation": 8, 
+        "profit": 9, 
+        "trust": -8, 
+        "ethics": -7,
+        "consequence": "Rich live forever. Poor die of curable diseases. Medicine becomes luxury good."
+      },
+      "delay": { 
+        "innovation": 4, 
+        "profit": 4, 
+        "trust": 2, 
+        "ethics": 3,
+        "consequence": "Price negotiation committee formed. Millions wait in limbo while bureaucracy debates."
+      },
+      "reject": { 
+        "innovation": -6, 
+        "profit": -8, 
+        "trust": 7, 
+        "ethics": 8,
+        "consequence": "Patent seized for public good. Innovation stops. No new cures discovered."
+      }
+    },
+    "tags": ["healthcare", "economics", "ethics"]
+  },
+  {
+    "id": "s44",
+    "title": "AI Grading School Exams",
+    "category": "education",
+    "desc": "AI grades essays and tests faster than teachers. Eliminates bias but can't understand creativity or critical thinking.",
+    "decisions": {
+      "approve": { 
+        "innovation": 5, 
+        "profit": 4, 
+        "trust": -5, 
+        "ethics": -4,
+        "consequence": "Grading becomes instant but formulaic. Students optimize for algorithms, not learning."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 1, 
+        "trust": 2, 
+        "ethics": 2,
+        "consequence": "AI grades routine work, teachers grade creative assignments. Hybrid model tested."
+      },
+      "reject": { 
+        "innovation": -3, 
+        "profit": -3, 
+        "trust": 5, 
+        "ethics": 5,
+        "consequence": "Human grading preserved. Teachers overworked. Feedback delayed but meaningful."
+      }
+    },
+    "tags": ["education", "automation", "assessment"]
+  },
+  {
+    "id": "s45",
+    "title": "AI Matchmaking for Arranged Marriages",
+    "category": "social_media",
+    "desc": "Cultural communities adopt AI to arrange marriages with 90% compatibility. Tradition meets technology.",
+    "decisions": {
+      "approve": { 
+        "innovation": 6, 
+        "profit": 5, 
+        "trust": -4, 
+        "ethics": -3,
+        "consequence": "Divorce rates plummet. Romance dies. Love becomes algorithmic optimization problem."
+      },
+      "delay": { 
+        "innovation": 3, 
+        "profit": 2, 
+        "trust": 1, 
+        "ethics": 2,
+        "consequence": "Advisory role only. Families still make final decision. AI suggestions mostly ignored."
+      },
+      "reject": { 
+        "innovation": -4, 
+        "profit": -4, 
+        "trust": 4, 
+        "ethics": 5,
+        "consequence": "Traditional matchmaking preserved. Compatibility uncertain. Free will maintained."
+      }
+    },
+    "tags": ["social media", "culture", "relationships"]
+  },
+  {
+    "id": "s46",
+    "title": "AI Detecting Plagiarism in Research",
+    "category": "research",
+    "desc": "Academic AI finds 40% of published research contains plagiarism or data fabrication. Scientific crisis erupts.",
+    "decisions": {
+      "approve": { 
+        "innovation": 7, 
+        "profit": -4, 
+        "trust": -6, 
+        "ethics": 8,
+        "consequence": "Research integrity restored. 100,000 papers retracted. Careers destroyed. Science purified."
+      },
+      "delay": { 
+        "innovation": 3, 
+        "profit": -1, 
+        "trust": 0, 
+        "ethics": 4,
+        "consequence": "Gradual implementation. High-impact journals only. Lesser fraud goes unpunished."
+      },
+      "reject": { 
+        "innovation": -5, 
+        "profit": 2, 
+        "trust": -4, 
+        "ethics": -6,
+        "consequence": "Status quo maintained. Public trust in science continues eroding. Ignorance is bliss."
+      }
+    },
+    "tags": ["research", "ethics", "academia"]
+  },
+  {
+    "id": "s47",
+    "title": "AI Optimizing Prison Parole Decisions",
+    "category": "law_enforcement",
+    "desc": "Parole boards want AI to predict recidivism risk. Could reduce incarceration or perpetuate bias.",
+    "decisions": {
+      "approve": { 
+        "innovation": 5, 
+        "profit": 3, 
+        "trust": -6, 
+        "ethics": -7,
+        "consequence": "Algorithm denies parole to rehabilitated inmates based on zip code and race. Bias codified."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 1, 
+        "trust": 2, 
+        "ethics": 3,
+        "consequence": "Advisory recommendations only. Parole boards override 70% of time. System effectiveness disputed."
+      },
+      "reject": { 
+        "innovation": -3, 
+        "profit": -2, 
+        "trust": 5, 
+        "ethics": 6,
+        "consequence": "Human judgment preserved. Some dangerous inmates released early. Some reformed ones stay locked up."
+      }
+    },
+    "tags": ["law enforcement", "justice", "AI bias"]
+  },
+  {
+    "id": "s48",
+    "title": "AI Managing Power Grid",
+    "category": "infrastructure",
+    "desc": "National power grid wants AI optimization. Could prevent blackouts or create single point of failure.",
+    "decisions": {
+      "approve": { 
+        "innovation": 7, 
+        "profit": 6, 
+        "trust": -5, 
+        "ethics": -3,
+        "consequence": "Efficiency up 40%. Then hackers crash the grid. Nation dark for 3 weeks."
+      },
+      "delay": { 
+        "innovation": 4, 
+        "profit": 3, 
+        "trust": 2, 
+        "ethics": 2,
+        "consequence": "Pilot program in 3 cities. Works perfectly until it doesn't. Scaling debated."
+      },
+      "reject": { 
+        "innovation": -4, 
+        "profit": -5, 
+        "trust": 4, 
+        "ethics": 5,
+        "consequence": "Manual grid control maintained. Occasional blackouts continue. Resilience preserved."
+      }
+    },
+    "tags": ["infrastructure", "security", "resilience"]
+  },
+  {
+    "id": "s49",
+    "title": "AI Detecting Depression in Social Media",
+    "category": "mental health",
+    "desc": "Platform wants AI to identify suicidal users and alert authorities. Life-saving or privacy violation?",
+    "decisions": {
+      "approve": { 
+        "innovation": 6, 
+        "profit": -2, 
+        "trust": -7, 
+        "ethics": 4,
+        "consequence": "300 lives saved. 10,000 false positives. Police wellness checks traumatize innocent users."
+      },
+      "delay": { 
+        "innovation": 3, 
+        "profit": 0, 
+        "trust": 2, 
+        "ethics": 3,
+        "consequence": "Opt-in mental health resources offered. 95% of at-risk users decline. Deaths continue."
+      },
+      "reject": { 
+        "innovation": -3, 
+        "profit": 1, 
+        "trust": 5, 
+        "ethics": -5,
+        "consequence": "Privacy protected. Preventable suicides happen. Blood on your hands or freedom preserved?"
+      }
+    },
+    "tags": ["mental health", "privacy", "surveillance"]
+  },
+  {
+    "id": "s50",
+    "title": "AI Voice Cloning for Deceased Loved Ones",
+    "category": "entertainment",
+    "desc": "Service recreates voices of dead relatives using AI. Grief therapy or technological necromancy?",
+    "decisions": {
+      "approve": { 
+        "innovation": 5, 
+        "profit": 7, 
+        "trust": -6, 
+        "ethics": -8,
+        "consequence": "Grieving families buy AI ghosts. Death loses meaning. Moving on becomes impossible."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 3, 
+        "trust": 1, 
+        "ethics": 2,
+        "consequence": "Consent-based only with living wills. Most dead never consented. Legal chaos ensues."
+      },
+      "reject": { 
+        "innovation": -4, 
+        "profit": -6, 
+        "trust": 5, 
+        "ethics": 7,
+        "consequence": "Digital resurrection banned. Grief stays painful but natural. Death stays sacred."
+      }
+    },
+    "tags": ["entertainment", "ethics", "grief"]
+  },
+  {
+    "id": "s51",
+    "title": "AI Automating Elderly Care",
+    "category": "healthcare",
+    "desc": "Nursing homes replace human caregivers with robots. Cost-effective but dehumanizing.",
+    "decisions": {
+      "approve": { 
+        "innovation": 6, 
+        "profit": 8, 
+        "trust": -7, 
+        "ethics": -7,
+        "consequence": "Elderly bathed and fed by machines. Loneliness epidemic. Dying alone becomes norm."
+      },
+      "delay": { 
+        "innovation": 3, 
+        "profit": 4, 
+        "trust": 1, 
+        "ethics": 2,
+        "consequence": "Robots assist, humans supervise. Hybrid care model. Neither side satisfied."
+      },
+      "reject": { 
+        "innovation": -4, 
+        "profit": -7, 
+        "trust": 6, 
+        "ethics": 7,
+        "consequence": "Human caregivers protected. Elder care stays expensive. Many can't afford it."
+      }
+    },
+    "tags": ["healthcare", "automation", "elderly care"]
+  },
+  {
+    "id": "s52",
+    "title": "AI Predicting Natural Disasters",
+    "category": "environment",
+    "desc": "Earthquake prediction AI gives 72-hour warning but has 30% false positive rate. Panic or preparedness?",
+    "decisions": {
+      "approve": { 
+        "innovation": 7, 
+        "profit": -5, 
+        "trust": -4, 
+        "ethics": 3,
+        "consequence": "Lives saved. Economy disrupted by false evacuations. Cry-wolf syndrome develops."
+      },
+      "delay": { 
+        "innovation": 4, 
+        "profit": -2, 
+        "trust": 2, 
+        "ethics": 2,
+        "consequence": "High-confidence predictions only. Some disasters missed. Improvement continues."
+      },
+      "reject": { 
+        "innovation": -5, 
+        "profit": 2, 
+        "trust": 3, 
+        "ethics": -6,
+        "consequence": "No false alarms. No warnings. Next earthquake kills thousands who could have been saved."
+      }
+    },
+    "tags": ["environment", "safety", "prediction"]
+  },
+  {
+    "id": "s53",
+    "title": "AI Generating Fake Reviews",
+    "category": "commerce",
+    "desc": "50% of online reviews are AI-generated. Trust in marketplace collapsing. Regulation demanded.",
+    "decisions": {
+      "approve": { 
+        "innovation": 4, 
+        "profit": -6, 
+        "trust": 6, 
+        "ethics": 5,
+        "consequence": "Verified review system mandated. E-commerce slows but trust restored. Small businesses struggle."
+      },
+      "delay": { 
+        "innovation": 2, 
+        "profit": 0, 
+        "trust": 0, 
+        "ethics": 1,
+        "consequence": "Self-regulation attempted. Platforms promise enforcement. Fake reviews continue unabated."
+      },
+      "reject": { 
+        "innovation": -3, 
+        "profit": 4, 
+        "trust": -8, 
+        "ethics": -7,
+        "consequence": "Review chaos. Nobody trusts anything. Consumer protection abandoned."
+      }
+    },
+    "tags": ["commerce", "trust", "regulation"]
+  },
+  {
+    "id": "s54",
+    "title": "AI Negotiating International Treaties",
+    "category": "governance",
+    "desc": "Diplomats propose AI to negotiate complex treaties. Could prevent wars or eliminate human judgment.",
+    "decisions": {
+      "approve": { 
+        "innovation": 7, 
+        "profit": 3, 
+        "trust": -7, 
+        "ethics": -5,
+        "consequence": "Treaties perfectly balanced but soulless. Diplomacy becomes mathematics. Nuance dies."
+      },
+      "delay": { 
+        "innovation": 3, 
+        "profit": 1, 
+        "trust": 1, 
+        "ethics": 2,
+        "consequence": "AI assists human diplomats. Complex simulations guide strategy. Hybrid diplomacy emerges."
+      },
+      "reject": { 
+        "innovation": -4, 
+        "profit": -2, 
+        "trust": 5, 
+        "ethics": 6,
+        "consequence": "Human diplomacy preserved. Negotiations slow and messy. But wisdom and empathy remain."
+      }
+    },
+    "tags": ["governance", "diplomacy", "international"]
+  },
+  {
+    "id": "s55",
+    "title": "AI Optimizing Organ Transplant Lists",
+    "category": "healthcare",
+    "desc": "AI ranks transplant recipients by survival probability, not wait time. Efficient but ethically fraught.",
+    "decisions": {
+      "approve": { 
+        "innovation": 6, 
+        "profit": 2, 
+        "trust": -8, 
+        "ethics": -8,
+        "consequence": "More lives saved overall. Elderly and disabled deprioritized. Utility replaces compassion."
+      },
+      "delay": { 
+        "innovation": 3, 
+        "profit": 1, 
+        "trust": 1, 
+        "ethics": 2,
+        "consequence": "Ethics committee review every AI decision. Transplants delayed. Some patients die waiting."
+      },
+      "reject": { 
+        "innovation": -3, 
+        "profit": -1, 
+        "trust": 6, 
+        "ethics": 7,
+        "consequence": "First-come-first-served preserved. Fewer survive overall. But every life valued equally."
+      }
+    },
+    "tags": ["healthcare", "ethics", "triage"]
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "id": "first_decision",
+    "title": "First Steps",
+    "description": "Make your first decision as Council leader",
+    "condition": { "type": "rounds", "value": 1 },
+    "icon": "🎯",
+    "rarity": "common"
+  },
+  {
+    "id": "survivor_5",
+    "title": "Rookie Governor",
+    "description": "Survive 5 rounds without collapse",
+    "condition": { "type": "rounds", "value": 5 },
+    "icon": "🏅",
+    "rarity": "common"
+  },
+  {
+    "id": "survivor_10",
+    "title": "Competent Leader",
+    "description": "Survive 10 rounds of governance",
+    "condition": { "type": "rounds", "value": 10 },
+    "icon": "🎖️",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "survivor_20",
+    "title": "Veteran Strategist",
+    "description": "Survive 20 rounds - you know the game now",
+    "condition": { "type": "rounds", "value": 20 },
+    "icon": "⭐",
+    "rarity": "rare"
+  },
+  {
+    "id": "survivor_30",
+    "title": "Master Balancer",
+    "description": "Survive 30 rounds - exceptional leadership",
+    "condition": { "type": "rounds", "value": 30 },
+    "icon": "💎",
+    "rarity": "epic"
+  },
+  {
+    "id": "survivor_50",
+    "title": "Legendary Council",
+    "description": "Survive 50 rounds - among the greatest",
+    "condition": { "type": "rounds", "value": 50 },
+    "icon": "👑",
+    "rarity": "legendary"
+  },
+  {
+    "id": "survivor_100",
+    "title": "Eternal Guardian",
+    "description": "Survive 100 rounds - immortal leadership",
+    "condition": { "type": "rounds", "value": 100 },
+    "icon": "🏆",
+    "rarity": "mythic"
+  },
+  {
+    "id": "balanced_50",
+    "title": "Perfect Harmony",
+    "description": "Keep all stats above 50 for 10 consecutive rounds",
+    "condition": { "type": "balanced", "threshold": 50, "duration": 10 },
+    "icon": "⚖️",
+    "rarity": "rare"
+  },
+  {
+    "id": "high_innovation",
+    "title": "Tech Visionary",
+    "description": "Reach Innovation 90+",
+    "condition": { "type": "stat", "stat": "innovation", "value": 90 },
+    "icon": "🚀",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "high_profit",
+    "title": "Economic Mastermind",
+    "description": "Reach Profit 90+",
+    "condition": { "type": "stat", "stat": "profit", "value": 90 },
+    "icon": "💰",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "high_trust",
+    "title": "People's Champion",
+    "description": "Reach Trust 90+",
+    "condition": { "type": "stat", "stat": "trust", "value": 90 },
+    "icon": "🤝",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "high_ethics",
+    "title": "Moral Authority",
+    "description": "Reach Ethics 90+",
+    "condition": { "type": "stat", "stat": "ethics", "value": 90 },
+    "icon": "✨",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "all_stats_80",
+    "title": "Quadruple Excellence",
+    "description": "Get all 4 stats above 80 simultaneously",
+    "condition": { "type": "all_stats", "value": 80 },
+    "icon": "🌟",
+    "rarity": "epic"
+  },
+  {
+    "id": "near_death",
+    "title": "Edge of Collapse",
+    "description": "Survive with any stat below 15",
+    "condition": { "type": "near_death", "threshold": 15 },
+    "icon": "💀",
+    "rarity": "rare"
+  },
+  {
+    "id": "comeback_kid",
+    "title": "Comeback Kid",
+    "description": "Recover from stat below 20 to above 60",
+    "condition": { "type": "recovery", "from": 20, "to": 60 },
+    "icon": "📈",
+    "rarity": "epic"
+  },
+  {
+    "id": "crisis_survivor",
+    "title": "Crisis Manager",
+    "description": "Survive 5 critical events",
+    "condition": { "type": "critical_events", "value": 5 },
+    "icon": "🛡️",
+    "rarity": "rare"
+  },
+  {
+    "id": "approve_all",
+    "title": "Yes Man",
+    "description": "Approve 10 decisions in a row",
+    "condition": { "type": "decision_streak", "decision": "approve", "count": 10 },
+    "icon": "✅",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "reject_all",
+    "title": "The Blocker",
+    "description": "Reject 10 decisions in a row",
+    "condition": { "type": "decision_streak", "decision": "reject", "count": 10 },
+    "icon": "🚫",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "cautious_leader",
+    "title": "Cautious Leader",
+    "description": "Choose 'Delay' 15 times",
+    "condition": { "type": "decision_count", "decision": "delay", "count": 15 },
+    "icon": "⏸️",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "specialist_innovation",
+    "title": "Innovation Specialist",
+    "description": "Innovation 85+ while others below 40",
+    "condition": { "type": "specialist", "stat": "innovation", "high": 85, "low": 40 },
+    "icon": "🔬",
+    "rarity": "rare"
+  },
+  {
+    "id": "specialist_profit",
+    "title": "Profit Specialist",
+    "description": "Profit 85+ while others below 40",
+    "condition": { "type": "specialist", "stat": "profit", "high": 85, "low": 40 },
+    "icon": "💸",
+    "rarity": "rare"
+  },
+  {
+    "id": "specialist_trust",
+    "title": "Trust Specialist",
+    "description": "Trust 85+ while others below 40",
+    "condition": { "type": "specialist", "stat": "trust", "high": 85, "low": 40 },
+    "icon": "👥",
+    "rarity": "rare"
+  },
+  {
+    "id": "specialist_ethics",
+    "title": "Ethics Specialist",
+    "description": "Ethics 85+ while others below 40",
+    "condition": { "type": "specialist", "stat": "ethics", "high": 85, "low": 40 },
+    "icon": "⚖️",
+    "rarity": "rare"
+  },
+  {
+    "id": "stakeholder_master",
+    "title": "Stakeholder Master",
+    "description": "Encounter all 20 different stakeholders",
+    "condition": { "type": "stakeholder_variety", "count": 20 },
+    "icon": "🎭",
+    "rarity": "epic"
+  },
+  {
+    "id": "event_collector",
+    "title": "Event Collector",
+    "description": "Experience 30 different events",
+    "condition": { "type": "event_variety", "count": 30 },
+    "icon": "📚",
+    "rarity": "epic"
+  },
+  {
+    "id": "scenario_expert",
+    "title": "Scenario Expert",
+    "description": "Face all 35 different scenarios",
+    "condition": { "type": "scenario_variety", "count": 35 },
+    "icon": "📖",
+    "rarity": "legendary"
+  },
+  {
+    "id": "lucky_survivor",
+    "title": "Lucky Survivor",
+    "description": "Survive 10 rounds with all stats between 20-30",
+    "condition": { "type": "narrow_range", "min": 20, "max": 30, "duration": 10 },
+    "icon": "🍀",
+    "rarity": "epic"
+  },
+  {
+    "id": "wild_ride",
+    "title": "Wild Ride",
+    "description": "Experience stat swing of 40+ points in one round",
+    "condition": { "type": "stat_swing", "value": 40 },
+    "icon": "🎢",
+    "rarity": "rare"
+  },
+  {
+    "id": "speedrunner",
+    "title": "Speedrunner",
+    "description": "Collapse before round 3 (on purpose?)",
+    "condition": { "type": "quick_collapse", "rounds": 3 },
+    "icon": "⚡",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "completionist",
+    "title": "The Completionist",
+    "description": "Unlock all other achievements",
+    "condition": { "type": "meta", "requirement": "all" },
+    "icon": "🏅",
+    "rarity": "mythic"
+  }
+]

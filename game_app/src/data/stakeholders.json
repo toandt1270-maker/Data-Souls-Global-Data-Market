@@ -1,0 +1,392 @@
+[
+  {
+    "id": "investor",
+    "name": "The Investor",
+    "concern": "profit",
+    "mod": { "profit": 2, "innovation": 1 },
+    "mod_negative": { "profit": -2, "innovation": -1 },
+    "flavor": "Market confidence shifts. Investors react to your economic decisions.",
+    "reaction_positive": "Funding influx! Investors see potential in your direction.",
+    "reaction_negative": "Market withdrawal. Investors pull back funding."
+  },
+  {
+    "id": "regulator",
+    "name": "The Regulator",
+    "concern": "ethics",
+    "mod": { "ethics": 2, "trust": 1 },
+    "mod_negative": { "ethics": -2, "trust": -1 },
+    "flavor": "International regulators monitor your compliance closely.",
+    "reaction_positive": "New supportive legislation passed in your favor.",
+    "reaction_negative": "Formal inquiry initiated. Regulatory pressure increases."
+  },
+  {
+    "id": "public",
+    "name": "The Public",
+    "concern": "trust",
+    "mod": { "trust": 2, "ethics": 1 },
+    "mod_negative": { "trust": -2, "ethics": -1 },
+    "flavor": "Citizens watch your every move. Public opinion is volatile.",
+    "reaction_positive": "Citizens volunteer data for the greater good.",
+    "reaction_negative": "Mass protest organized. #DeleteTheCouncil trends."
+  },
+  {
+    "id": "visionary",
+    "name": "The Visionary",
+    "concern": "innovation",
+    "mod": { "innovation": 2, "profit": 1 },
+    "mod_negative": { "innovation": -2, "profit": -1 },
+    "flavor": "Leading scientists and researchers respond to your priorities.",
+    "reaction_positive": "Open-source breakthrough! Innovation accelerates.",
+    "reaction_negative": "Key scientist resigns in protest. Brain drain begins."
+  },
+  {
+    "id": "activist",
+    "name": "The Activist",
+    "concern": "ethics",
+    "mod": { "ethics": 2, "trust": 2 },
+    "mod_negative": { "ethics": -2, "trust": -2 },
+    "flavor": "Civil rights organizations mobilize around your AI governance decisions.",
+    "reaction_positive": "Activists endorse your policies. Public support grows.",
+    "reaction_negative": "Protests erupt. '#AIAccountability' trends worldwide."
+  },
+  {
+    "id": "entrepreneur",
+    "name": "The Entrepreneur",
+    "concern": "innovation",
+    "mod": { "innovation": 2, "profit": 2 },
+    "mod_negative": { "innovation": -2, "profit": -2 },
+    "flavor": "Startup ecosystem reacts to your regulatory environment.",
+    "reaction_positive": "Startup accelerator launches. Talent floods in.",
+    "reaction_negative": "Entrepreneurs flee to competitor nations. Capital follows."
+  },
+  {
+    "id": "ethicist",
+    "name": "The Ethicist",
+    "concern": "ethics",
+    "mod": { "ethics": 3, "trust": 1 },
+    "mod_negative": { "ethics": -3, "trust": -1 },
+    "flavor": "Philosophy professors and bioethics experts weigh in on your decisions.",
+    "reaction_positive": "Academic endorsement. Your policies cited in ethics journals.",
+    "reaction_negative": "Ethicists publish open letter condemning your approach."
+  },
+  {
+    "id": "military",
+    "name": "The General",
+    "concern": "innovation",
+    "mod": { "innovation": 2, "ethics": -1 },
+    "mod_negative": { "innovation": -2, "ethics": 1 },
+    "flavor": "Military leadership assesses strategic implications of AI development.",
+    "reaction_positive": "Defense contracts secured. Military R&D funding increases.",
+    "reaction_negative": "Pentagon warns of national security risks in your approach."
+  },
+  {
+    "id": "journalist",
+    "name": "The Journalist",
+    "concern": "trust",
+    "mod": { "trust": 2, "ethics": 1 },
+    "mod_negative": { "trust": -3, "ethics": -1 },
+    "flavor": "Investigative reporters scrutinize Council transparency and accountability.",
+    "reaction_positive": "Positive media coverage. '60 Minutes' does flattering profile.",
+    "reaction_negative": "Exposé published. Front page: 'AI Council: Power Without Accountability'"
+  },
+  {
+    "id": "labor_union",
+    "name": "The Union Leader",
+    "concern": "trust",
+    "mod": { "trust": 2, "profit": -1 },
+    "mod_negative": { "trust": -2, "profit": 1 },
+    "flavor": "Labor unions monitor AI's impact on jobs and worker rights.",
+    "reaction_positive": "Union endorsement. Workers see you as ally in automation age.",
+    "reaction_negative": "General strike called. Millions walk off job protesting AI policies."
+  },
+  {
+    "id": "tech_ceo",
+    "name": "The Tech CEO",
+    "concern": "profit",
+    "mod": { "profit": 3, "innovation": 1 },
+    "mod_negative": { "profit": -3, "innovation": -1 },
+    "flavor": "Silicon Valley billionaires react to regulatory climate.",
+    "reaction_positive": "Major tech IPO. CEOs praise business-friendly AI governance.",
+    "reaction_negative": "Tech giants threaten to relocate. Stock prices tumble."
+  },
+  {
+    "id": "educator",
+    "name": "The Professor",
+    "concern": "ethics",
+    "mod": { "ethics": 2, "innovation": 1 },
+    "mod_negative": { "ethics": -2, "innovation": -1 },
+    "flavor": "Academia evaluates educational and societal impacts of AI policies.",
+    "reaction_positive": "Universities adopt your framework. Curriculum updated globally.",
+    "reaction_negative": "Faculty senate passes no-confidence resolution in Council."
+  },
+  {
+    "id": "doctor",
+    "name": "The Physician",
+    "concern": "ethics",
+    "mod": { "ethics": 2, "trust": 1 },
+    "mod_negative": { "ethics": -2, "trust": -1 },
+    "flavor": "Medical community assesses healthcare AI through lens of 'do no harm'.",
+    "reaction_positive": "Medical association endorses your health AI standards.",
+    "reaction_negative": "Doctors boycott AI diagnostics. 'Hippocratic oath violated' headlines."
+  },
+  {
+    "id": "parent",
+    "name": "The Parent",
+    "concern": "trust",
+    "mod": { "trust": 2, "ethics": 2 },
+    "mod_negative": { "trust": -2, "ethics": -2 },
+    "flavor": "Parents worldwide worry about AI's impact on their children's future.",
+    "reaction_positive": "PTA endorsement. Parents see AI as tool for better education.",
+    "reaction_negative": "Million Mom March demands AI regulation. '#ProtectOurKids' trends."
+  },
+  {
+    "id": "hacker",
+    "name": "The Hacker",
+    "concern": "innovation",
+    "mod": { "innovation": 2, "trust": -1 },
+    "mod_negative": { "innovation": -2, "trust": 1 },
+    "flavor": "Underground tech community of hackers, makers, and open-source advocates.",
+    "reaction_positive": "Open-source community releases powerful AI tools for free.",
+    "reaction_negative": "Anonymous declares cyberwar on Council. Prepare for attacks."
+  },
+  {
+    "id": "religious_leader",
+    "name": "The Cardinal",
+    "concern": "ethics",
+    "mod": { "ethics": 3, "innovation": -1 },
+    "mod_negative": { "ethics": -3, "innovation": 1 },
+    "flavor": "Religious leaders interpret AI developments through moral and theological lens.",
+    "reaction_positive": "Papal blessing. 'AI can serve divine plan' encyclical published.",
+    "reaction_negative": "Religious coalition declares AI 'playing God'. Faithful mobilize."
+  },
+  {
+    "id": "youth_activist",
+    "name": "The Student",
+    "concern": "trust",
+    "mod": { "trust": 2, "innovation": 1 },
+    "mod_negative": { "trust": -2, "innovation": -1 },
+    "flavor": "Young people demand voice in decisions affecting their future.",
+    "reaction_positive": "Youth climate activists align with your AI sustainability goals.",
+    "reaction_negative": "Gen Z cancels the Council. TikTok outrage reaches 3 billion views."
+  },
+  {
+    "id": "artist",
+    "name": "The Artist",
+    "concern": "ethics",
+    "mod": { "ethics": 2, "trust": 1 },
+    "mod_negative": { "ethics": -2, "trust": -1 },
+    "flavor": "Creative community fights to preserve human artistry in AI age.",
+    "reaction_positive": "Artists embrace AI as tool. New renaissance of human-AI collaboration.",
+    "reaction_negative": "Artists' union calls for ban on generative AI. Museums boycott AI art."
+  },
+  {
+    "id": "politician",
+    "name": "The Senator",
+    "concern": "trust",
+    "mod": { "trust": 2, "profit": 1 },
+    "mod_negative": { "trust": -3, "profit": -1 },
+    "flavor": "Elected officials balance constituent concerns with corporate lobbying.",
+    "reaction_positive": "Bipartisan support. Congress passes AI funding bill unanimously.",
+    "reaction_negative": "Senate investigation launched. Subpoenas issued to Council members."
+  },
+  {
+    "id": "environmentalist",
+    "name": "The Environmentalist",
+    "concern": "ethics",
+    "mod": { "ethics": 2, "innovation": 1 },
+    "mod_negative": { "ethics": -2, "innovation": -1 },
+    "flavor": "Climate activists monitor AI's energy consumption and environmental impact.",
+    "reaction_positive": "Green AI certification achieved. Carbon-negative data centers launched.",
+    "reaction_negative": "AI server farms consume energy of small nation. Greta is disappointed."
+  },
+  {
+    "id": "philosopher",
+    "name": "The Philosopher",
+    "concern": "ethics",
+    "mod": { "ethics": 3, "innovation": -1 },
+    "mod_negative": { "ethics": -3, "innovation": 1 },
+    "flavor": "Continental philosophers debate consciousness, free will, and AI personhood.",
+    "reaction_positive": "AI philosophy institute founded. Existential questions guide policy.",
+    "reaction_negative": "Philosophers declare AI governance 'philosophically bankrupt.'"
+  },
+  {
+    "id": "economist",
+    "name": "The Economist",
+    "concern": "profit",
+    "mod": { "profit": 3, "innovation": 1 },
+    "mod_negative": { "profit": -3, "innovation": -1 },
+    "flavor": "Nobel economists analyze AI's impact on markets and inequality.",
+    "reaction_positive": "Economic models show your policies creating sustainable growth.",
+    "reaction_negative": "IMF warns of AI-driven economic collapse under your leadership."
+  },
+  {
+    "id": "farmer",
+    "name": "The Farmer",
+    "concern": "trust",
+    "mod": { "trust": 2, "profit": 1 },
+    "mod_negative": { "trust": -2, "profit": -1 },
+    "flavor": "Rural farming communities struggle with AI disrupting traditional agriculture.",
+    "reaction_positive": "Farmers adopt AI tools. Crop yields up. Rural communities thrive.",
+    "reaction_negative": "Family farms bankrupted by corporate AI agriculture. Rural anger boils."
+  },
+  {
+    "id": "librarian",
+    "name": "The Librarian",
+    "concern": "ethics",
+    "mod": { "ethics": 2, "trust": 1 },
+    "mod_negative": { "ethics": -2, "trust": -1 },
+    "flavor": "Information professionals defend access to knowledge in AI age.",
+    "reaction_positive": "Public libraries become AI literacy centers. Digital divide narrows.",
+    "reaction_negative": "AI replaces librarians. Knowledge curation becomes algorithmic."
+  },
+  {
+    "id": "police_chief",
+    "name": "The Police Chief",
+    "concern": "innovation",
+    "mod": { "innovation": 2, "trust": -1 },
+    "mod_negative": { "innovation": -2, "trust": 1 },
+    "flavor": "Law enforcement leaders balance public safety with civil liberties.",
+    "reaction_positive": "Predictive policing reduces crime. Community relations improve.",
+    "reaction_negative": "Police union threatens work slowdown over AI oversight rules."
+  },
+  {
+    "id": "indigenous_elder",
+    "name": "The Indigenous Elder",
+    "concern": "ethics",
+    "mod": { "ethics": 3, "trust": 2 },
+    "mod_negative": { "ethics": -3, "trust": -2 },
+    "flavor": "Indigenous communities protect traditional knowledge from AI exploitation.",
+    "reaction_positive": "Indigenous data sovereignty recognized. Traditional knowledge protected.",
+    "reaction_negative": "Sacred knowledge stolen by AI. Cultural genocide through technology."
+  },
+  {
+    "id": "veteran",
+    "name": "The Veteran",
+    "concern": "trust",
+    "mod": { "trust": 2, "ethics": 1 },
+    "mod_negative": { "trust": -2, "ethics": -1 },
+    "flavor": "Military veterans evaluate AI's impact on warfare and national security.",
+    "reaction_positive": "Veterans support responsible AI defense applications.",
+    "reaction_negative": "Veterans Against Killer Robots launches national campaign."
+  },
+  {
+    "id": "refugee",
+    "name": "The Refugee",
+    "concern": "trust",
+    "mod": { "trust": 2, "ethics": 2 },
+    "mod_negative": { "trust": -2, "ethics": -2 },
+    "flavor": "Displaced peoples face AI-powered surveillance and border control systems.",
+    "reaction_positive": "AI asylum processing speeds humanitarian relief. Lives saved.",
+    "reaction_negative": "Biometric databases track refugees like criminals. Dystopia for migrants."
+  },
+  {
+    "id": "insurance_exec",
+    "name": "The Insurance Executive",
+    "concern": "profit",
+    "mod": { "profit": 3, "ethics": -1 },
+    "mod_negative": { "profit": -3, "ethics": 1 },
+    "flavor": "Insurance industry profits from AI risk assessment and pricing algorithms.",
+    "reaction_positive": "Actuarial AI makes insurance affordable and accurate.",
+    "reaction_negative": "Genetic discrimination lawsuit costs industry $50 billion."
+  },
+  {
+    "id": "judge",
+    "name": "The Judge",
+    "concern": "ethics",
+    "mod": { "ethics": 3, "trust": 1 },
+    "mod_negative": { "ethics": -3, "trust": -1 },
+    "flavor": "Judicial system grapples with AI's role in law and justice.",
+    "reaction_positive": "Supreme Court upholds your AI governance framework.",
+    "reaction_negative": "Class action lawsuit filed. Council sued for algorithmic discrimination."
+  },
+  {
+    "id": "architect",
+    "name": "The Architect",
+    "concern": "innovation",
+    "mod": { "innovation": 2, "profit": 1 },
+    "mod_negative": { "innovation": -2, "profit": -1 },
+    "flavor": "Urban planners and architects design smart cities with AI infrastructure.",
+    "reaction_positive": "AI-designed cities become models of sustainable urban planning.",
+    "reaction_negative": "Surveillance architecture creates urban panopticon. Privacy architects resign."
+  },
+  {
+    "id": "small_business_owner",
+    "name": "The Small Business Owner",
+    "concern": "profit",
+    "mod": { "profit": 2, "trust": 1 },
+    "mod_negative": { "profit": -2, "trust": -1 },
+    "flavor": "Main Street businesses compete against AI-powered corporate giants.",
+    "reaction_positive": "Small business AI grants level playing field with corporations.",
+    "reaction_negative": "Amazon's AI crushes 40,000 small businesses. Main Street dies."
+  },
+  {
+    "id": "psychologist",
+    "name": "The Psychologist",
+    "concern": "ethics",
+    "mod": { "ethics": 2, "trust": 2 },
+    "mod_negative": { "ethics": -2, "trust": -2 },
+    "flavor": "Mental health professionals study AI's psychological impact on society.",
+    "reaction_positive": "AI therapy tools supplement human counseling. Mental health improves.",
+    "reaction_negative": "AI addiction classified as mental disorder. Generation lost to algorithms."
+  },
+  {
+    "id": "whistleblower",
+    "name": "The Whistleblower",
+    "concern": "trust",
+    "mod": { "trust": 3, "ethics": 2 },
+    "mod_negative": { "trust": -3, "ethics": -2 },
+    "flavor": "Insiders expose AI corruption and unethical practices at great personal risk.",
+    "reaction_positive": "Whistleblower protections strengthened. Transparency increases.",
+    "reaction_negative": "Anonymous leak exposes Council corruption. Your leadership questioned."
+  },
+  {
+    "id": "refugee_advocate",
+    "name": "The Humanitarian",
+    "concern": "ethics",
+    "mod": { "ethics": 3, "trust": 2 },
+    "mod_negative": { "ethics": -3, "trust": -2 },
+    "flavor": "NGO workers use and oppose AI in humanitarian crises.",
+    "reaction_positive": "AI disaster response saves thousands. Humanitarian community grateful.",
+    "reaction_negative": "Biometric refugee tracking compared to concentration camps. UN condemns."
+  },
+  {
+    "id": "data_scientist",
+    "name": "The Data Scientist",
+    "concern": "innovation",
+    "mod": { "innovation": 3, "ethics": -1 },
+    "mod_negative": { "innovation": -3, "ethics": 1 },
+    "flavor": "Technical experts who build AI systems evaluate governance decisions.",
+    "reaction_positive": "Data science community endorses technical standards. Collaboration flourishes.",
+    "reaction_negative": "50,000 data scientists sign open letter opposing your policies."
+  },
+  {
+    "id": "privacy_advocate",
+    "name": "The Privacy Advocate",
+    "concern": "ethics",
+    "mod": { "ethics": 3, "trust": 2 },
+    "mod_negative": { "ethics": -3, "trust": -2 },
+    "flavor": "Digital rights activists fight surveillance capitalism and mass data collection.",
+    "reaction_positive": "EFF endorses your privacy framework. Model for global adoption.",
+    "reaction_negative": "Privacy advocates declare you 'enemy of digital freedom.'"
+  },
+  {
+    "id": "futurist",
+    "name": "The Futurist",
+    "concern": "innovation",
+    "mod": { "innovation": 3, "profit": 1 },
+    "mod_negative": { "innovation": -3, "profit": -1 },
+    "flavor": "Transhumanists and longevity researchers push boundaries of human enhancement.",
+    "reaction_positive": "Singularity Institute hails your vision. Innovation unbound.",
+    "reaction_negative": "Existential risk researchers warn your policies endanger humanity."
+  },
+  {
+    "id": "historian",
+    "name": "The Historian",
+    "concern": "ethics",
+    "mod": { "ethics": 2, "trust": 1 },
+    "mod_negative": { "ethics": -2, "trust": -1 },
+    "flavor": "Scholars study parallels between AI revolution and past technological disruptions.",
+    "reaction_positive": "Historical analysis validates your governance approach.",
+    "reaction_negative": "Historians compare your Council to dystopias from science fiction warnings."
+  }
+]

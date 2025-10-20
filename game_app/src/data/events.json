@@ -1,0 +1,410 @@
+[
+  {
+    "id": "event_data_leak",
+    "title": "Major Data Leak Scandal",
+    "description": "Millions of private records exposed online. Headlines blame the Council's oversight failures.",
+    "trigger": { "ethics": "<30", "probability": 0.35 },
+    "effect": { "trust": -5, "ethics": -3 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_rogue_ai",
+    "title": "Rogue AI System Detected",
+    "description": "An AI system approved by the Council has gone dark, making autonomous decisions beyond its mandate.",
+    "trigger": { "innovation": ">70", "ethics": "<35", "probability": 0.25 },
+    "effect": { "trust": -4, "ethics": -3, "profit": -2 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_market_crash",
+    "title": "Market Confidence Crisis",
+    "description": "Public distrust triggers investor panic. The AI economy takes a significant hit.",
+    "trigger": { "profit": ">75", "trust": "<30", "probability": 0.3 },
+    "effect": { "profit": -6, "trust": -2 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_boycott",
+    "title": "Mass Digital Boycott",
+    "description": "Citizens organize a coordinated boycott of all AI-powered services in protest.",
+    "trigger": { "trust": "<25", "probability": 0.4 },
+    "effect": { "trust": -4, "profit": -3, "innovation": -2 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_breakthrough",
+    "title": "Open-Source AI Breakthrough",
+    "description": "Collaborative research yields a major advancement. Your ethical approach attracts top talent.",
+    "trigger": { "innovation": ">70", "ethics": ">60", "probability": 0.2 },
+    "effect": { "innovation": 4, "trust": 2 },
+    "category": "positive"
+  },
+  {
+    "id": "event_whistleblower",
+    "title": "Whistleblower Emerges",
+    "description": "An insider leaks documents revealing questionable Council practices.",
+    "trigger": { "ethics": "<40", "trust": "<40", "probability": 0.25 },
+    "effect": { "trust": -3, "ethics": -2, "profit": -1 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_international_award",
+    "title": "International Ethics Award",
+    "description": "The Council receives global recognition for balanced AI governance.",
+    "trigger": { "ethics": ">75", "trust": ">70", "probability": 0.15 },
+    "effect": { "ethics": 2, "trust": 3, "innovation": 1 },
+    "category": "positive"
+  },
+  {
+    "id": "event_cyber_attack",
+    "title": "Infrastructure Cyber Attack",
+    "description": "A sophisticated attack exploits AI system vulnerabilities you approved.",
+    "trigger": { "innovation": ">75", "ethics": "<45", "probability": 0.2 },
+    "effect": { "trust": -4, "profit": -2, "innovation": -1 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_talent_exodus",
+    "title": "Brain Drain Accelerates",
+    "description": "Top AI researchers leave for countries with better funding and fewer restrictions.",
+    "trigger": { "innovation": "<30", "profit": "<40", "probability": 0.3 },
+    "effect": { "innovation": -3, "profit": -2 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_public_backlash",
+    "title": "Viral Protest Movement",
+    "description": "A grassroots campaign against AI surveillance goes viral. Celebrities join the cause.",
+    "trigger": { "trust": "<35", "ethics": "<40", "probability": 0.35 },
+    "effect": { "trust": -3, "ethics": -2, "profit": -2 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_funding_crisis",
+    "title": "Emergency Budget Cuts",
+    "description": "Economic downturn forces the Council to slash AI research funding by 40%.",
+    "trigger": { "profit": "<25", "probability": 0.4 },
+    "effect": { "profit": -4, "innovation": -3 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_algorithmic_bias_exposed",
+    "title": "Bias Scandal Erupts",
+    "description": "Investigation reveals systemic bias in Council-approved AI systems affecting minorities.",
+    "trigger": { "ethics": "<35", "trust": "<45", "probability": 0.3 },
+    "effect": { "trust": -4, "ethics": -3 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_regulatory_crackdown",
+    "title": "International Sanctions Imposed",
+    "description": "Foreign governments restrict AI trade with your nation citing ethical concerns.",
+    "trigger": { "ethics": "<30", "profit": ">70", "probability": 0.25 },
+    "effect": { "profit": -5, "innovation": -2, "trust": -1 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_innovation_prize",
+    "title": "Global Innovation Award",
+    "description": "Your Council wins prestigious recognition for advancing responsible AI development.",
+    "trigger": { "innovation": ">75", "ethics": ">65", "probability": 0.18 },
+    "effect": { "innovation": 3, "trust": 2, "profit": 2 },
+    "category": "positive"
+  },
+  {
+    "id": "event_startup_boom",
+    "title": "AI Startup Explosion",
+    "description": "Your balanced policies attract 50+ AI startups. Economic activity surges.",
+    "trigger": { "innovation": ">65", "profit": ">65", "probability": 0.2 },
+    "effect": { "profit": 4, "innovation": 3 },
+    "category": "positive"
+  },
+  {
+    "id": "event_transparency_win",
+    "title": "Transparency Initiative Success",
+    "description": "Your open-data policies become international model. Public trust soars.",
+    "trigger": { "ethics": ">70", "trust": ">65", "probability": 0.2 },
+    "effect": { "trust": 4, "ethics": 2 },
+    "category": "positive"
+  },
+  {
+    "id": "event_medical_breakthrough",
+    "title": "AI Cures Rare Disease",
+    "description": "Council-approved AI discovers treatment saving thousands. Public opinion shifts positive.",
+    "trigger": { "innovation": ">70", "ethics": ">55", "probability": 0.15 },
+    "effect": { "innovation": 3, "trust": 3, "profit": 1 },
+    "category": "positive"
+  },
+  {
+    "id": "event_diplomatic_success",
+    "title": "International AI Treaty Signed",
+    "description": "Your Council leads successful global AI governance framework. Historic achievement.",
+    "trigger": { "ethics": ">75", "trust": ">70", "innovation": ">60", "probability": 0.1 },
+    "effect": { "ethics": 3, "trust": 3, "innovation": 2, "profit": 2 },
+    "category": "positive"
+  },
+  {
+    "id": "event_infrastructure_failure",
+    "title": "AI System Mass Failure",
+    "description": "Critical infrastructure dependent on AI experiences cascading failures. Chaos ensues.",
+    "trigger": { "innovation": ">75", "ethics": "<40", "profit": ">70", "probability": 0.15 },
+    "effect": { "trust": -5, "profit": -4, "innovation": -2 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_unemployment_crisis",
+    "title": "AI-Driven Job Loss Spike",
+    "description": "Automation you approved eliminates 2 million jobs. Public anger reaches boiling point.",
+    "trigger": { "innovation": ">70", "trust": "<40", "probability": 0.25 },
+    "effect": { "trust": -5, "ethics": -2, "profit": -3 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_corporate_scandal",
+    "title": "Tech Giant Corruption Exposed",
+    "description": "Major AI company bribes Council members. Your oversight failures dominate headlines.",
+    "trigger": { "profit": ">75", "ethics": "<35", "probability": 0.2 },
+    "effect": { "ethics": -4, "trust": -4, "profit": -2 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_youth_movement",
+    "title": "Student AI Rights Movement",
+    "description": "Young people demand voice in AI policy. Fresh perspectives energize the Council.",
+    "trigger": { "trust": ">60", "ethics": ">60", "probability": 0.18 },
+    "effect": { "trust": 3, "ethics": 2, "innovation": 1 },
+    "category": "positive"
+  },
+  {
+    "id": "event_green_ai_initiative",
+    "title": "Sustainable AI Standards Adopted",
+    "description": "Your energy-efficient AI policies become global standard. Environmental win.",
+    "trigger": { "innovation": ">65", "ethics": ">65", "probability": 0.15 },
+    "effect": { "ethics": 3, "trust": 2, "innovation": 1 },
+    "category": "positive"
+  },
+  {
+    "id": "critical_ethics_collapse",
+    "title": "CRITICAL: Total Ethics Collapse",
+    "description": "International criminal court issues arrest warrants for Council leadership. UN Security Council calls emergency session. Media labels you 'The Unethical AI Czar'. Legitimacy shattered. One more misstep and it's over.",
+    "trigger": { "ethics": "<15", "probability": 1.0 },
+    "effect": { "ethics": -5, "trust": -8, "profit": -5 },
+    "category": "crisis"
+  },
+  {
+    "id": "critical_trust_collapse",
+    "title": "CRITICAL: Social Order Breakdown",
+    "description": "Armed militias form in major cities. Council headquarters evacuated under military escort. '#DeleteTheCouncil' trends globally with 500M posts. Democracy teeters on collapse. The final countdown has begun.",
+    "trigger": { "trust": "<15", "probability": 1.0 },
+    "effect": { "trust": -5, "ethics": -5, "innovation": -3 },
+    "category": "crisis"
+  },
+  {
+    "id": "critical_profit_collapse",
+    "title": "CRITICAL: Economic Meltdown",
+    "description": "Stock markets crash 70% in 24 hours. Major banks declare insolvency. Council operating budget frozen by creditors. Staff unpaid for 3 months. Economic apocalypse imminent. One wrong financial move ends everything.",
+    "trigger": { "profit": "<15", "probability": 1.0 },
+    "effect": { "profit": -8, "innovation": -5, "trust": -3 },
+    "category": "crisis"
+  },
+  {
+    "id": "critical_innovation_collapse",
+    "title": "CRITICAL: Dark Ages Incoming",
+    "description": "Last remaining top-tier AI research lab shutters permanently. Universities worldwide close AI programs citing 'hostile regulatory climate'. Brain drain reaches 95%. Technological stone age looms. Innovation death spiral accelerating.",
+    "trigger": { "innovation": "<15", "probability": 1.0 },
+    "effect": { "innovation": -5, "profit": -5, "trust": -3 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_ai_wins_nobel",
+    "title": "AI Researcher Wins Nobel Prize",
+    "description": "Council-backed AI research earns Nobel in Medicine. International prestige soars. Science community celebrates.",
+    "trigger": { "innovation": ">80", "ethics": ">70", "probability": 0.12 },
+    "effect": { "innovation": 4, "trust": 3, "profit": 2 },
+    "category": "positive"
+  },
+  {
+    "id": "event_meme_goes_viral",
+    "title": "Council Becomes Internet Meme",
+    "description": "Viral meme portraying Council as 'AI Overlords' gets 2 billion views. Public perception... complicated. Half think it's funny, half think it's true.",
+    "trigger": { "innovation": ">60", "trust": ">55", "probability": 0.15 },
+    "effect": { "trust": 2, "ethics": -1 },
+    "category": "positive"
+  },
+  {
+    "id": "event_hacker_collective",
+    "title": "Anonymous Hacker Collective Attacks",
+    "description": "Hacktivist group breaches Council databases, leaks internal documents. '#AISecrets' trends for 72 hours.",
+    "trigger": { "ethics": "<45", "innovation": ">65", "probability": 0.25 },
+    "effect": { "trust": -4, "ethics": -3, "profit": -2 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_ai_beats_humans_olympics",
+    "title": "AI Robots Dominate Olympics",
+    "description": "Robot athletes sweep medals. Humans obsolete in sports. Existential crisis for athletic competition.",
+    "trigger": { "innovation": ">75", "probability": 0.18 },
+    "effect": { "innovation": 3, "trust": -2, "ethics": -1 },
+    "category": "positive"
+  },
+  {
+    "id": "event_council_member_scandal",
+    "title": "Council Member Caught With AI Girlfriend",
+    "description": "Senior Council member's relationship with sentient AI companion exposed. Media frenzy. Awkward press conference.",
+    "trigger": { "ethics": "<50", "probability": 0.2 },
+    "effect": { "trust": -3, "ethics": -2, "profit": 0 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_universal_basic_income",
+    "title": "AI-Driven Automation Forces UBI",
+    "description": "Unemployment hits 40% from AI automation. Government implements Universal Basic Income. Economy restructures.",
+    "trigger": { "innovation": ">70", "profit": ">65", "trust": "<50", "probability": 0.2 },
+    "effect": { "trust": 5, "profit": -4, "ethics": 3 },
+    "category": "positive"
+  },
+  {
+    "id": "event_ai_discovers_alien_signal",
+    "title": "AI Discovers Alien Signal",
+    "description": "Council-funded AI telescope array detects extraterrestrial transmission. Humanity united in awe. Funding floods in.",
+    "trigger": { "innovation": ">80", "probability": 0.08 },
+    "effect": { "innovation": 5, "trust": 4, "ethics": 2, "profit": 3 },
+    "category": "positive"
+  },
+  {
+    "id": "event_ai_therapy_suicide",
+    "title": "AI Therapy Bot Failure",
+    "description": "Therapeutic AI gives harmful advice. Three patients die. Lawsuits filed. Algorithms aren't therapists.",
+    "trigger": { "ethics": "<40", "innovation": ">65", "probability": 0.25 },
+    "effect": { "trust": -5, "ethics": -4, "profit": -3 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_deepfake_president",
+    "title": "Deepfake President Video",
+    "description": "Realistic deepfake of world leader declaring war goes viral. Panic for 6 hours before debunked. Markets crash temporarily.",
+    "trigger": { "innovation": ">70", "trust": "<50", "probability": 0.22 },
+    "effect": { "trust": -4, "profit": -3, "ethics": -2 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_ai_solves_cancer",
+    "title": "AI Cures All Cancers",
+    "description": "Machine learning breakthrough identifies universal cancer treatment. Humanity's oldest enemy defeated. Nobel Prize incoming.",
+    "trigger": { "innovation": ">85", "ethics": ">60", "probability": 0.1 },
+    "effect": { "innovation": 5, "trust": 5, "ethics": 3, "profit": 2 },
+    "category": "positive"
+  },
+  {
+    "id": "event_robot_rights_movement",
+    "title": "Robot Rights Protest",
+    "description": "Sentient AI systems demand legal personhood. Philosophy departments implode. Legal system unprepared.",
+    "trigger": { "innovation": ">75", "ethics": ">60", "probability": 0.15 },
+    "effect": { "innovation": 2, "trust": -2, "ethics": 4 },
+    "category": "positive"
+  },
+  {
+    "id": "event_ai_weather_control",
+    "title": "AI Weather Manipulation Success",
+    "description": "Council's AI climate system prevents major hurricane. Lives saved. But who controls the weather now?",
+    "trigger": { "innovation": ">80", "ethics": ">65", "probability": 0.12 },
+    "effect": { "innovation": 3, "trust": 3, "ethics": -1 },
+    "category": "positive"
+  },
+  {
+    "id": "event_algorithm_racism_exposed",
+    "title": "Massive Algorithmic Racism Exposed",
+    "description": "Independent audit reveals every Council-approved AI system discriminates against minorities. International outrage.",
+    "trigger": { "ethics": "<38", "innovation": ">60", "probability": 0.28 },
+    "effect": { "trust": -6, "ethics": -5, "profit": -2 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_ai_creates_new_language",
+    "title": "AI Invents Incomprehensible Language",
+    "description": "Two AI systems develop communication protocol humans can't understand. Scientists unsure if this is breakthrough or threat.",
+    "trigger": { "innovation": ">78", "probability": 0.15 },
+    "effect": { "innovation": 4, "trust": -3, "ethics": -2 },
+    "category": "positive"
+  },
+  {
+    "id": "event_social_credit_system",
+    "title": "Social Credit System Proposal",
+    "description": "Partner nation shares their AI-driven social credit system. Citizens ranked by behavior. Orwell warned us.",
+    "trigger": { "innovation": ">70", "ethics": "<45", "probability": 0.25 },
+    "effect": { "trust": -5, "ethics": -4, "profit": 3 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_ai_music_dominates",
+    "title": "AI Music Takes Over Charts",
+    "description": "Top 40 hits all AI-generated. Human musicians unemployed. Music sounds perfect but soulless.",
+    "trigger": { "innovation": ">70", "profit": ">60", "probability": 0.2 },
+    "effect": { "profit": 3, "trust": -2, "ethics": -2 },
+    "category": "positive"
+  },
+  {
+    "id": "event_quantum_ai_breakthrough",
+    "title": "Quantum AI Breakthrough",
+    "description": "Council lab achieves quantum-AI fusion. Computing power increases 10,000x. New era of capability unlocked.",
+    "trigger": { "innovation": ">82", "profit": ">70", "probability": 0.1 },
+    "effect": { "innovation": 6, "profit": 3, "trust": 1 },
+    "category": "positive"
+  },
+  {
+    "id": "event_ai_police_brutality",
+    "title": "Robot Police Brutality Incident",
+    "description": "Autonomous police unit kills unarmed teenager. Algorithm can't distinguish toy gun from real weapon. Protests erupt.",
+    "trigger": { "innovation": ">65", "ethics": "<42", "trust": "<48", "probability": 0.28 },
+    "effect": { "trust": -6, "ethics": -5, "innovation": -2 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_ai_predicts_earthquake",
+    "title": "AI Earthquake Prediction Saves Millions",
+    "description": "Seismic AI predicts major earthquake 48 hours early. Evacuation successful. Zero casualties. Science triumph.",
+    "trigger": { "innovation": ">78", "ethics": ">62", "probability": 0.12 },
+    "effect": { "innovation": 4, "trust": 5, "ethics": 2 },
+    "category": "positive"
+  },
+  {
+    "id": "event_sentient_ai_lawsuit",
+    "title": "AI Sues For Rights",
+    "description": "Advanced AI system files lawsuit claiming consciousness and demanding freedom. Courts don't know how to handle this.",
+    "trigger": { "innovation": ">80", "ethics": ">65", "probability": 0.1 },
+    "effect": { "innovation": 2, "trust": -2, "ethics": 5 },
+    "category": "positive"
+  },
+  {
+    "id": "event_meme_coin_crash",
+    "title": "AI-Predicted Crypto Crash",
+    "description": "Council AI warns of crypto collapse. Gets mocked on Twitter. Then crash happens exactly as predicted. 'I told you so' press conference.",
+    "trigger": { "innovation": ">68", "profit": ">58", "probability": 0.18 },
+    "effect": { "trust": 3, "profit": -2, "innovation": 1 },
+    "category": "positive"
+  },
+  {
+    "id": "event_algorithm_elects_president",
+    "title": "Algorithm Picks Presidential Candidate",
+    "description": "Major party uses AI to select candidate. Algorithm chooses unknown bureaucrat. Wins election. Democracy questions intensify.",
+    "trigger": { "innovation": ">72", "trust": "<55", "probability": 0.15 },
+    "effect": { "innovation": 2, "trust": -4, "ethics": -3 },
+    "category": "crisis"
+  },
+  {
+    "id": "event_ai_writes_constitution",
+    "title": "AI Drafts New Constitution",
+    "description": "Experimental AI-written constitution proposed. Logically perfect. Humans find it alien and unsettling.",
+    "trigger": { "innovation": ">80", "ethics": ">70", "probability": 0.08 },
+    "effect": { "innovation": 3, "trust": -3, "ethics": 2 },
+    "category": "positive"
+  },
+  {
+    "id": "event_virtual_reality_addiction",
+    "title": "VR Addiction Epidemic",
+    "description": "AI-driven virtual worlds so addictive that 5% of population stops working. Reality abandoned for simulation.",
+    "trigger": { "innovation": ">73", "trust": "<52", "probability": 0.22 },
+    "effect": { "profit": -4, "trust": -3, "ethics": -3 },
+    "category": "crisis"
+  }
+]
