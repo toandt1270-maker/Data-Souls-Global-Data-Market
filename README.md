@@ -1,4 +1,4 @@
-# 🧠 Data Souls: Global Data class [data-souls-global-data-market-falu.vercel.app]
+# 🧠 Data Souls: Global Data class 
 
 > **A card-based serious game exploring AI governance, data ethics, and the moral complexities of technological power in society.**
 
@@ -7,6 +7,8 @@
 [![AI Powered](https://img.shields.io/badge/AI-Gemini%20Powered-CC66FF?style=for-the-badge&logo=google)](https://ai.google.dev/)
 
 ---
+
+- Vercel deploy link: [data-souls-global-data-market-falu.vercel.app]
 
 ## 📋 Table of Contents
 
