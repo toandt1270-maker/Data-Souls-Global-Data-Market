@@ -1,4 +1,4 @@
-# 🧠 Data Souls: Global Data class
+# 🧠 Data Souls: Global Data class [data-souls-global-data-market-falu.vercel.app]
 
 > **A card-based serious game exploring AI governance, data ethics, and the moral complexities of technological power in society.**
 

@@ -32,12 +32,14 @@ export function applyBalanceAdjustments(state) {
 
   // PHASE 3: Adaptive rebalancing (helps struggling metrics)
   // Gently nudges extreme outliers toward the mean
+  // BUT: Don't rescue stats in critical danger zone (<= 15)
   const avg = Object.values(stats).reduce((a, b) => a + b, 0) / 4;
   for (const key of Object.keys(stats)) {
     if (stats[key] > avg + 25) {
       stats[key] = clamp(stats[key] - 0.5, 0, 100);
     }
-    if (stats[key] < avg - 25) {
+    // Only help struggling stats if they're not in critical danger
+    if (stats[key] < avg - 25 && stats[key] > 15) {
       stats[key] = clamp(stats[key] + 0.5, 0, 100);
     }
   }
